@@ -4,29 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="40e5bc7f-b1a5-421a-bb28-0a015a03e4d6" name="Changes" comment="setup project">
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dukan.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dukan.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+    <list default="true" id="40e5bc7f-b1a5-421a-bb28-0a015a03e4d6" name="Changes" comment="update">
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth_api/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth_api/admin.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth_api/apps.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth_api/auth_exceptions/base_exception.py" beforeDir="false" afterPath="$PROJECT_DIR$/auth_api/auth_exceptions/base_exception.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth_api/auth_exceptions/user_exceptions.py" beforeDir="false" afterPath="$PROJECT_DIR$/auth_api/auth_exceptions/user_exceptions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth_api/export_types/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth_api/export_types/request_data_types/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth_api/export_types/request_data_types/change_password.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth_api/export_types/request_data_types/login_user.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth_api/export_types/request_data_types/register_user.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth_api/export_types/request_data_types/search_user.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth_api/export_types/request_data_types/update_user_profile.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth_api/export_types/request_data_types/verify_otp.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth_api/export_types/user_types/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth_api/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/auth_api/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth_api/models/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/auth_api/models/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth_api/models/user_models/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/auth_api/models/user_models/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dukan/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/dukan/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_inventory/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/product_inventory/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_inventory/models/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/product_inventory/models/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_inventory/models/product.py" beforeDir="false" afterPath="$PROJECT_DIR$/product_inventory/models/product.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_inventory/view/get_all_products.py" beforeDir="false" afterPath="$PROJECT_DIR$/product_inventory/view/get_all_products.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -177,7 +166,15 @@
       <option name="project" value="LOCAL" />
       <updated>1747945235634</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="update">
+      <option name="closed" value="true" />
+      <created>1760028271621</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1760028271621</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -222,7 +219,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="user details api" />
     <MESSAGE value="simple forgot password" />
-    <option name="LAST_COMMIT_MESSAGE" value="simple forgot password" />
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

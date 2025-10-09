@@ -4,8 +4,8 @@ from rest_framework.response import Response
 from rest_framework.views import APIView
 
 from auth_api.services.handlers.exception_handlers import ExceptionHandler
-from product.export_types.product_types.export_product import ExportProductList
-from product.services.product_service import ProductService
+from product_inventory.export_types.product_types.export_product import ExportProductList
+from product_inventory.services.product_service import ProductService
 
 
 class AllProductView(APIView):
@@ -17,8 +17,8 @@ class AllProductView(APIView):
             if all_product and isinstance(all_product, ExportProductList):
                 return Response(
                     data={
+                        "message": "Data fetched successfully.",
                         "data": all_product.model_dump(),
-                        "message": None,
                     },
                     status=status.HTTP_200_OK,
                     content_type="application/json",

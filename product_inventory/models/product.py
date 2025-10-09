@@ -21,7 +21,7 @@ class Product(GenericBaseModel):
     sku = models.CharField(max_length=32, unique=True, blank=True)
     description = models.TextField(blank=True)
     price = models.DecimalField(max_digits=10, decimal_places=2)
-    stock = models.PositiveIntegerField(default=0, help_text="Number of items in stock")
+    stock = models.PositiveIntegerField(default=1, help_text="Number of items in stock")
     image = models.URLField(max_length=1024, blank=True, null=True)
     category = models.ForeignKey(Category, related_name='products', on_delete=models.CASCADE)
     brand = models.CharField(max_length=100, blank=True, null=True)
