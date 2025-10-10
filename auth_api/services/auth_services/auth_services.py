@@ -1,8 +1,8 @@
 from django.core.exceptions import ObjectDoesNotExist
 
 from auth_api.auth_exceptions.user_exceptions import UserNotFoundError
-from auth_api.export_types.request_data_types.register_user import RegisterUserRequestType
 from auth_api.export_types.request_data_types.login_user import LoginRequestType
+from auth_api.export_types.request_data_types.register_user import RegisterUserRequestType
 from auth_api.export_types.user_types.export_user import ExportUser
 from auth_api.models.user_models.user import User
 from auth_api.serializers.forgor_password_serializer import ForgotPasswordSerializer

@@ -1,11 +1,12 @@
 from typing import Optional
+
 from rest_framework import serializers
 
 from auth_api.auth_exceptions.user_exceptions import UserNotFoundError
 from auth_api.export_types.validation_types.validation_result import ValidationResult
 from auth_api.models.user_models.user import User
 from auth_api.services.encryption_services.encryption_service import EncryptionServices
-from auth_api.services.helpers import validate_email, validate_password, validate_user_email
+from auth_api.services.helpers import validate_password, validate_user_email
 
 
 class ForgotPasswordSerializer(serializers.ModelSerializer):

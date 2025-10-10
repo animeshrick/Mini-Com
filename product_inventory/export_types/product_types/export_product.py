@@ -1,7 +1,8 @@
+from _decimal import Decimal
 from typing import Optional, List
 from uuid import UUID
+
 from pydantic import BaseModel
-from _decimal import Decimal
 
 from product_inventory.export_types.product_types.export_category import ExportCategory
 

@@ -4,12 +4,60 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="40e5bc7f-b1a5-421a-bb28-0a015a03e4d6" name="Changes" comment="update">
-      <change afterPath="$PROJECT_DIR$/cart/models/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart/models/cart.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart/models/cart_item.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order/models/__init__.py" afterDir="false" />
+    <list default="true" id="40e5bc7f-b1a5-421a-bb28-0a015a03e4d6" name="Changes" comment="update cart">
+      <change afterPath="$PROJECT_DIR$/cart/export_types/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cart/export_types/cart_types/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cart/export_types/cart_types/export_cart.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cart/export_types/cart_types/export_cart_item.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cart/export_types/request_data_types/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cart/export_types/request_data_types/add_update_delete.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cart/serializers/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cart/services/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cart/services/cart_services.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cart/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cart/views/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cart/views/add_to_cart_view.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth_api/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/auth_api/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth_api/auth_exceptions/user_exceptions.py" beforeDir="false" afterPath="$PROJECT_DIR$/auth_api/auth_exceptions/user_exceptions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth_api/export_types/request_data_types/register_user.py" beforeDir="false" afterPath="$PROJECT_DIR$/auth_api/export_types/request_data_types/register_user.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth_api/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/auth_api/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth_api/models/deifinitions.py" beforeDir="false" afterPath="$PROJECT_DIR$/auth_api/models/deifinitions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth_api/models/user_models/abstract_user.py" beforeDir="false" afterPath="$PROJECT_DIR$/auth_api/models/user_models/abstract_user.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth_api/models/user_models/user.py" beforeDir="false" afterPath="$PROJECT_DIR$/auth_api/models/user_models/user.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth_api/serializers/forgor_password_serializer.py" beforeDir="false" afterPath="$PROJECT_DIR$/auth_api/serializers/forgor_password_serializer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth_api/serializers/user_serializer.py" beforeDir="false" afterPath="$PROJECT_DIR$/auth_api/serializers/user_serializer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth_api/services/auth_services/auth_services.py" beforeDir="false" afterPath="$PROJECT_DIR$/auth_api/services/auth_services/auth_services.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth_api/services/handlers/exception_handlers.py" beforeDir="false" afterPath="$PROJECT_DIR$/auth_api/services/handlers/exception_handlers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth_api/services/helpers.py" beforeDir="false" afterPath="$PROJECT_DIR$/auth_api/services/helpers.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth_api/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/auth_api/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth_api/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/auth_api/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth_api/views/forgot_password.py" beforeDir="false" afterPath="$PROJECT_DIR$/auth_api/views/forgot_password.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth_api/views/register.py" beforeDir="false" afterPath="$PROJECT_DIR$/auth_api/views/register.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cart/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/cart/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cart/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/cart/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cart/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cart/models/cart.py" beforeDir="false" afterPath="$PROJECT_DIR$/cart/models/cart.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cart/models/cart_item.py" beforeDir="false" afterPath="$PROJECT_DIR$/cart/models/cart_item.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cart/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/cart/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cart/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dukan/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/dukan/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dukan/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/dukan/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/order/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/order/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/order/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/order/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_inventory/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/product_inventory/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_inventory/export_types/product_types/export_product.py" beforeDir="false" afterPath="$PROJECT_DIR$/product_inventory/export_types/product_types/export_product.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_inventory/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/product_inventory/migrations/0001_initial.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_inventory/migrations/0002_alter_product_stock.py" beforeDir="false" afterPath="$PROJECT_DIR$/product_inventory/migrations/0002_alter_product_stock.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_inventory/models/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/product_inventory/models/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_inventory/models/category.py" beforeDir="false" afterPath="$PROJECT_DIR$/product_inventory/models/category.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_inventory/models/product.py" beforeDir="false" afterPath="$PROJECT_DIR$/product_inventory/models/product.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_inventory/services/product_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/product_inventory/services/product_service.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_inventory/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/product_inventory/tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_inventory/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/product_inventory/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +86,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main_setup" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -72,9 +125,9 @@
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.pycharm.django.structure.promotion.once.per.project": "true",
     "com.codeium.enabled": "true",
-    "git-widget-placeholder": "main__setup",
+    "git-widget-placeholder": "add__to__cart",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "D:/python-project/dukan/cart/modles",
+    "last_opened_file_path": "D:/python-project/dukan/cart/export_types/cart_types",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -91,11 +144,14 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\python-project\dukan\cart\export_types\cart_types" />
       <recent name="D:\python-project\dukan\cart\modles" />
       <recent name="D:\python-project\dukan\auth_api\auth_exceptions" />
       <recent name="D:\python-project\dukan\product_inventory" />
       <recent name="D:\python-project\dukan\auth_api\serializers" />
-      <recent name="D:\python-project\dukan" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\python-project\dukan\cart\export_types\request_data_types" />
     </key>
   </component>
   <component name="RunManager">
@@ -185,7 +241,15 @@
       <option name="project" value="LOCAL" />
       <updated>1760030212636</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="update cart">
+      <option name="closed" value="true" />
+      <created>1760031512871</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1760031512871</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -231,30 +295,26 @@
     <MESSAGE value="user details api" />
     <MESSAGE value="simple forgot password" />
     <MESSAGE value="update" />
-    <option name="LAST_COMMIT_MESSAGE" value="update" />
+    <MESSAGE value="update cart" />
+    <option name="LAST_COMMIT_MESSAGE" value="update cart" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/auth_api/serializers/forgor_password_serializer.py</url>
-          <line>27</line>
+          <line>28</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/auth_api/serializers/forgor_password_serializer.py</url>
-          <line>46</line>
+          <line>47</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/auth_api/serializers/forgor_password_serializer.py</url>
-          <line>56</line>
+          <line>57</line>
           <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/auth_api/views/register.py</url>
-          <line>18</line>
-          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

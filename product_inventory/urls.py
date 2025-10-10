@@ -1,4 +1,5 @@
 from django.urls import path
+
 from product_inventory.view.get_all_products import AllProductView
 from product_inventory.view.get_product import GetProductView
 

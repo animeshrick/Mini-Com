@@ -1,7 +1,8 @@
+import uuid
+
+from django.core.exceptions import ValidationError
 from django.db import models
 from django.utils.text import slugify
-import uuid
-from django.core.exceptions import ValidationError
 
 from auth_api.models.base_models.base_model import GenericBaseModel
 from product_inventory.models.category import Category
@@ -26,7 +27,8 @@ class Product(GenericBaseModel):
     category = models.ForeignKey(Category, related_name='products', on_delete=models.CASCADE)
     brand = models.CharField(max_length=100, blank=True, null=True)
     is_active = models.BooleanField(default=True)
-    discount = models.DecimalField(max_digits=5, decimal_places=2, default=0, help_text="Discount percentage (e.g., 10 for 10%)", blank=True, null=True)
+    discount = models.DecimalField(max_digits=5, decimal_places=2, default=0,
+                                   help_text="Discount percentage (e.g., 10 for 10%)", blank=True, null=True)
 
     @property
     def is_out_of_stock(self):
@@ -59,4 +61,4 @@ class Product(GenericBaseModel):
             models.Index(fields=["price"]),
             models.Index(fields=["category"]),
             models.Index(fields=["discount"]),
-        ] 
+        ]
