@@ -4,60 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="40e5bc7f-b1a5-421a-bb28-0a015a03e4d6" name="Changes" comment="update cart">
-      <change afterPath="$PROJECT_DIR$/cart/export_types/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart/export_types/cart_types/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart/export_types/cart_types/export_cart.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart/export_types/cart_types/export_cart_item.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart/export_types/request_data_types/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart/export_types/request_data_types/add_update_delete.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart/serializers/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart/services/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart/services/cart_services.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart/views/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart/views/add_to_cart_view.py" afterDir="false" />
+    <list default="true" id="40e5bc7f-b1a5-421a-bb28-0a015a03e4d6" name="Changes" comment="setup done cart- add/update/delete item etc">
+      <change afterPath="$PROJECT_DIR$/cart/export_types/cart_types/cart_user.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cart/serializers/cart_serializer.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth_api/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/auth_api/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth_api/auth_exceptions/user_exceptions.py" beforeDir="false" afterPath="$PROJECT_DIR$/auth_api/auth_exceptions/user_exceptions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth_api/export_types/request_data_types/register_user.py" beforeDir="false" afterPath="$PROJECT_DIR$/auth_api/export_types/request_data_types/register_user.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth_api/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/auth_api/migrations/0001_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth_api/models/deifinitions.py" beforeDir="false" afterPath="$PROJECT_DIR$/auth_api/models/deifinitions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth_api/models/user_models/abstract_user.py" beforeDir="false" afterPath="$PROJECT_DIR$/auth_api/models/user_models/abstract_user.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth_api/models/user_models/user.py" beforeDir="false" afterPath="$PROJECT_DIR$/auth_api/models/user_models/user.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth_api/serializers/forgor_password_serializer.py" beforeDir="false" afterPath="$PROJECT_DIR$/auth_api/serializers/forgor_password_serializer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth_api/serializers/user_serializer.py" beforeDir="false" afterPath="$PROJECT_DIR$/auth_api/serializers/user_serializer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth_api/services/auth_services/auth_services.py" beforeDir="false" afterPath="$PROJECT_DIR$/auth_api/services/auth_services/auth_services.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth_api/services/handlers/exception_handlers.py" beforeDir="false" afterPath="$PROJECT_DIR$/auth_api/services/handlers/exception_handlers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth_api/services/helpers.py" beforeDir="false" afterPath="$PROJECT_DIR$/auth_api/services/helpers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth_api/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/auth_api/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth_api/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/auth_api/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth_api/views/forgot_password.py" beforeDir="false" afterPath="$PROJECT_DIR$/auth_api/views/forgot_password.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth_api/views/register.py" beforeDir="false" afterPath="$PROJECT_DIR$/auth_api/views/register.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cart/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/cart/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cart/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/cart/migrations/0001_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cart/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cart/export_types/cart_types/export_cart.py" beforeDir="false" afterPath="$PROJECT_DIR$/cart/export_types/cart_types/export_cart.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cart/export_types/cart_types/export_cart_item.py" beforeDir="false" afterPath="$PROJECT_DIR$/cart/export_types/cart_types/export_cart_item.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cart/export_types/request_data_types/add_update_delete.py" beforeDir="false" afterPath="$PROJECT_DIR$/cart/export_types/request_data_types/add_update_delete.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cart/models/cart.py" beforeDir="false" afterPath="$PROJECT_DIR$/cart/models/cart.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cart/models/cart_item.py" beforeDir="false" afterPath="$PROJECT_DIR$/cart/models/cart_item.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cart/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/cart/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cart/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dukan/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/dukan/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dukan/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/dukan/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/order/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/order/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/order/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/order/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product_inventory/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/product_inventory/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product_inventory/export_types/product_types/export_product.py" beforeDir="false" afterPath="$PROJECT_DIR$/product_inventory/export_types/product_types/export_product.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product_inventory/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/product_inventory/migrations/0001_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product_inventory/migrations/0002_alter_product_stock.py" beforeDir="false" afterPath="$PROJECT_DIR$/product_inventory/migrations/0002_alter_product_stock.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product_inventory/models/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/product_inventory/models/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product_inventory/models/category.py" beforeDir="false" afterPath="$PROJECT_DIR$/product_inventory/models/category.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product_inventory/models/product.py" beforeDir="false" afterPath="$PROJECT_DIR$/product_inventory/models/product.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product_inventory/services/product_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/product_inventory/services/product_service.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product_inventory/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/product_inventory/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product_inventory/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/product_inventory/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cart/services/cart_services.py" beforeDir="false" afterPath="$PROJECT_DIR$/cart/services/cart_services.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cart/views/add_to_cart_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/cart/views/add_to_cart_view.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,35 +69,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Django Server.dukan.executor": "Debug",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Python.manage,py.executor": "Debug",
-    "Python.manage.executor": "Run",
-    "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.pycharm.django.structure.promotion.once.per.project": "true",
-    "com.codeium.enabled": "true",
-    "git-widget-placeholder": "add__to__cart",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "D:/python-project/dukan/cart/export_types/cart_types",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Django Server.dukan.executor&quot;: &quot;Debug&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Python.manage,py.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.manage.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenDjangoStructureViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.pycharm.django.structure.promotion.once.per.project&quot;: &quot;true&quot;,
+    &quot;com.codeium.enabled&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;add__to__cart&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/python-project/dukan/cart/export_types/cart_types&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\python-project\dukan\cart\export_types\cart_types" />
@@ -249,21 +205,39 @@
       <option name="project" value="LOCAL" />
       <updated>1760031512871</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="setup done cart- add/update/delete item etc">
+      <option name="closed" value="true" />
+      <created>1760119785280</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1760119785280</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
-    <option name="OPEN_GENERIC_TABS">
+    <option name="RECENT_FILTERS">
       <map>
-        <entry key="0487d22a-dbb3-4723-bfd7-d8dec4f2136e" value="TOOL_WINDOW" />
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="add_to_cart" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
       </map>
     </option>
     <option name="TAB_STATES">
       <map>
-        <entry key="0487d22a-dbb3-4723-bfd7-d8dec4f2136e">
+        <entry key="MAIN">
           <value>
             <State>
               <option name="FILTERS">
@@ -271,20 +245,12 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="HEAD" />
-                      </list>
-                    </value>
-                  </entry>
-                  <entry key="structure">
-                    <value>
-                      <list>
-                        <option value="dir:D:/python-project/dukan/auth_api/export_types/request_data_types" />
+                        <option value="add_to_cart" />
                       </list>
                     </value>
                   </entry>
                 </map>
               </option>
-              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
             </State>
           </value>
         </entry>
@@ -296,16 +262,12 @@
     <MESSAGE value="simple forgot password" />
     <MESSAGE value="update" />
     <MESSAGE value="update cart" />
-    <option name="LAST_COMMIT_MESSAGE" value="update cart" />
+    <MESSAGE value="setup done cart- add/update/delete item etc" />
+    <option name="LAST_COMMIT_MESSAGE" value="setup done cart- add/update/delete item etc" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/auth_api/serializers/forgor_password_serializer.py</url>
-          <line>28</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/auth_api/serializers/forgor_password_serializer.py</url>
           <line>47</line>
@@ -315,6 +277,26 @@
           <url>file://$PROJECT_DIR$/auth_api/serializers/forgor_password_serializer.py</url>
           <line>57</line>
           <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/cart/serializers/cart_serializer.py</url>
+          <line>68</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/cart/export_types/cart_types/export_cart.py</url>
+          <line>21</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/cart/export_types/cart_types/export_cart.py</url>
+          <line>15</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/cart/serializers/cart_serializer.py</url>
+          <line>69</line>
+          <option name="timeStamp" value="26" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -21,9 +21,18 @@ class AddUpdateDeleteCartView(APIView):
                 return Response(
                     data={
                         "message": "You are good to go",
-                        "data": "result.model_dump()",
+                        "data": result.model_dump(),
                     },
                     status=status.HTTP_201_CREATED,
+                    content_type="application/json",
+                )
+            else:
+                return Response(
+                    data={
+                        "message": "We are sorry, something is not right!",
+                        "data": [],
+                    },
+                    status=status.HTTP_500_INTERNAL_SERVER_ERROR,
                     content_type="application/json",
                 )
         except Exception as e:
