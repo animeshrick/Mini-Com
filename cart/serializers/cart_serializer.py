@@ -46,6 +46,7 @@ class CartSerializer(serializers.ModelSerializer):
                 user=user,
                 is_active=True
             )
+            cart.save()  # Must save first
 
             cart_items = []
             for cart_item in data.products:
@@ -55,16 +56,12 @@ class CartSerializer(serializers.ModelSerializer):
                     product=product,
                     quantity=cart_item.quantity
                 )
-                product.stock -= cart_item.quantity
-                # product.save()
-                print(f"Onion__ {item.product.name}")
                 cart_items.append(item)
+                product.stock -= cart_item.quantity
+                product.save()
 
-            print(f"cart_items: {cart_items}")
-            # cart_item.save()
-            # cart.save()
-
-
+            CartItem.objects.bulk_create(cart_items)
+            cart.refresh_from_db()  # Refresh to load relationships
 
             return cart
         return None

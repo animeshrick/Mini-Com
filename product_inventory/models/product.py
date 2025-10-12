@@ -22,7 +22,7 @@ class Product(GenericBaseModel):
     sku = models.CharField(max_length=32, unique=True, blank=True)
     description = models.TextField(blank=True)
     price = models.DecimalField(max_digits=10, decimal_places=2)
-    stock = models.PositiveIntegerField(default=1, help_text="Number of items in stock")
+    stock = models.PositiveIntegerField(help_text="Number of items in stock", blank=True, null=True)
     image = models.URLField(max_length=1024, blank=True, null=True)
     category = models.ForeignKey(Category, related_name='products', on_delete=models.CASCADE)
     brand = models.CharField(max_length=100, blank=True, null=True)
@@ -36,7 +36,7 @@ class Product(GenericBaseModel):
 
     def save(self, *args, **kwargs):
         if self.stock <= 0:
-            raise ValidationError("Product stock must be greater than 0 to add the product.")
+            raise ValidationError(f"Product ({self.name}) stock must be greater than 0 to add the product.")
         if not self.slug:
             base_slug = slugify(self.name)
             slug = base_slug

@@ -12,8 +12,13 @@ class CartServices:
     def add_update_delete_cart_service(request_data: AddUpdatedDeleteCartRequestType) -> Optional[ExportCart]:
         cart: Cart = CartSerializer().create(request_data)
         if cart:
-            print(f"cart: {cart.id} {cart}")
-            user_cart = ExportCart(with_id=True, **cart.model_to_dict())
+            print(f"User_cart== {cart.cart_items.all()}")
+            user_cart = ExportCart(
+                id=cart.id,
+                user=cart.user,
+                cart_items=list(cart.cart_items.all()),  # items is the related_name
+                is_active=cart.is_active
+            )
             return user_cart
         else:
             return None

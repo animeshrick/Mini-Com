@@ -4,16 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="40e5bc7f-b1a5-421a-bb28-0a015a03e4d6" name="Changes" comment="setup done cart- add/update/delete item etc">
-      <change afterPath="$PROJECT_DIR$/cart/export_types/cart_types/cart_user.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart/serializers/cart_serializer.py" afterDir="false" />
+    <list default="true" id="40e5bc7f-b1a5-421a-bb28-0a015a03e4d6" name="Changes" comment="update cart- add/update/delete item etc">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth_api/models/base_models/base_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/auth_api/models/base_models/base_model.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cart/export_types/cart_types/export_cart.py" beforeDir="false" afterPath="$PROJECT_DIR$/cart/export_types/cart_types/export_cart.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cart/export_types/cart_types/export_cart_item.py" beforeDir="false" afterPath="$PROJECT_DIR$/cart/export_types/cart_types/export_cart_item.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cart/export_types/request_data_types/add_update_delete.py" beforeDir="false" afterPath="$PROJECT_DIR$/cart/export_types/request_data_types/add_update_delete.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cart/models/cart.py" beforeDir="false" afterPath="$PROJECT_DIR$/cart/models/cart.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cart/models/cart_item.py" beforeDir="false" afterPath="$PROJECT_DIR$/cart/models/cart_item.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cart/serializers/cart_serializer.py" beforeDir="false" afterPath="$PROJECT_DIR$/cart/serializers/cart_serializer.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cart/services/cart_services.py" beforeDir="false" afterPath="$PROJECT_DIR$/cart/services/cart_services.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cart/views/add_to_cart_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/cart/views/add_to_cart_view.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_inventory/export_types/product_types/export_product.py" beforeDir="false" afterPath="$PROJECT_DIR$/product_inventory/export_types/product_types/export_product.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_inventory/models/product.py" beforeDir="false" afterPath="$PROJECT_DIR$/product_inventory/models/product.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -213,7 +214,15 @@
       <option name="project" value="LOCAL" />
       <updated>1760119785280</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="update cart- add/update/delete item etc">
+      <option name="closed" value="true" />
+      <created>1760219640168</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1760219640168</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -263,7 +272,8 @@
     <MESSAGE value="update" />
     <MESSAGE value="update cart" />
     <MESSAGE value="setup done cart- add/update/delete item etc" />
-    <option name="LAST_COMMIT_MESSAGE" value="setup done cart- add/update/delete item etc" />
+    <MESSAGE value="update cart- add/update/delete item etc" />
+    <option name="LAST_COMMIT_MESSAGE" value="update cart- add/update/delete item etc" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -279,24 +289,29 @@
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/cart/serializers/cart_serializer.py</url>
-          <line>68</line>
-          <option name="timeStamp" value="20" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/cart/export_types/cart_types/export_cart.py</url>
-          <line>21</line>
+          <line>29</line>
           <option name="timeStamp" value="24" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/cart/export_types/cart_types/export_cart.py</url>
-          <line>15</line>
-          <option name="timeStamp" value="25" />
+          <url>file://$PROJECT_DIR$/cart/views/add_to_cart_view.py</url>
+          <line>19</line>
+          <option name="timeStamp" value="34" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/cart/serializers/cart_serializer.py</url>
-          <line>69</line>
-          <option name="timeStamp" value="26" />
+          <url>file://$PROJECT_DIR$/product_inventory/models/product.py</url>
+          <line>38</line>
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/cart/export_types/cart_types/export_cart_item.py</url>
+          <line>20</line>
+          <option name="timeStamp" value="38" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/product_inventory/export_types/product_types/export_product.py</url>
+          <line>23</line>
+          <option name="timeStamp" value="40" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

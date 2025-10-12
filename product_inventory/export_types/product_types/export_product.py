@@ -16,12 +16,13 @@ class ExportProduct(BaseModel):
     price: Optional[Decimal] = None
     stock: Optional[int] = None
     image: Optional[str] = None
-    category: ExportCategory
+    category: Optional[ExportCategory] = None
     brand: Optional[str] = None
     discount: Optional[Decimal] = None
     is_active: bool
 
     def __init__(self, **kwargs):
+        print(f"kwargs_ExportProduct== {kwargs}")
         if kwargs.get("category"):
             kwargs["category"] = ExportCategory(
                 **kwargs["category"].model_to_dict()

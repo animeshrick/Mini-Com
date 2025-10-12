@@ -6,7 +6,7 @@ from product_inventory.models import Product
 
 
 class CartItem(GenericBaseModel):
-    cart = models.ForeignKey(Cart, on_delete=models.CASCADE, related_name='items')
+    cart = models.ForeignKey(Cart, on_delete=models.CASCADE, related_name='cart_items')
     product = models.ForeignKey(Product, on_delete=models.CASCADE)
     quantity = models.PositiveIntegerField(default=1)
 
