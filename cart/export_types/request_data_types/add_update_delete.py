@@ -6,7 +6,7 @@ from pydantic import BaseModel, Field
 
 class ProductItem(BaseModel):
     product_id: UUID
-    quantity: int = Field(default=1, gt=0)
+    quantity: int = Field(default=1, ge=0)
 
 
 class AddUpdatedDeleteCartRequestType(BaseModel):
