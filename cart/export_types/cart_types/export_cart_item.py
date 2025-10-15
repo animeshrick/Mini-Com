@@ -26,7 +26,3 @@ class ExportCartItem(BaseModel):
         if product_instance and isinstance(product_instance, Product):
             kwargs["product"] = ExportProduct(**product_instance.model_to_dict())
         super().__init__(**kwargs)
-
-
-class ExportCartItemList(BaseModel):
-    cart_items: List[ExportCartItem]

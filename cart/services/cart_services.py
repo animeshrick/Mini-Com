@@ -36,10 +36,14 @@ class CartServices:
                 id=cart.id,
                 user=cart.user,
                 cart_items=list(cart.cart_items.all()),  # Use cart_items (related_name)
-                is_active=cart.is_active
+                is_active=cart.is_active,
+                total_cart_price=getattr(cart, 'total_cart_price', 0.0)
             )
 
-            logging.info(f"Cart operation successful: Cart ID {cart.id}, User {cart.user.email}")
+            logging.info(
+                f"Cart operation successful: Cart ID {cart.id}, "
+                f"User {cart.user.email}, Total: ₹{user_cart.total_cart_price}"
+            )
             return user_cart
 
         except ValueError as ve:

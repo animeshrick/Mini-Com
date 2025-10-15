@@ -1,6 +1,7 @@
 from typing import Optional
 from django.db import transaction
 from rest_framework import serializers
+from _decimal import Decimal
 
 from auth_api.models import User
 from cart.export_types.request_data_types.add_update_delete import AddUpdatedDeleteCartRequestType
@@ -113,17 +114,49 @@ class CartSerializer(serializers.ModelSerializer):
 
         # ============== DELETE ACTION ==============
         if action == "D":
-            return self._handle_delete(existing_cart, data.products)
+            cart = self._handle_delete(existing_cart, data.products)
+            cart.total_cart_price = self._calculate_cart_total(cart)
+            return cart
 
         # ============== ADD ACTION ==============
         elif action == "A":
-            return self._handle_add(existing_cart, user, data.products)
+            cart = self._handle_add(existing_cart, user, data.products)
+            cart.total_cart_price = self._calculate_cart_total(cart)
+            return cart
 
         # ============== UPDATE ACTION ==============
         elif action == "U":
-            return self._handle_update(existing_cart, user, data.products)
+            cart = self._handle_update(existing_cart, user, data.products)
+            cart.total_cart_price = self._calculate_cart_total(cart)
+            return cart
 
         return None
+
+    def _calculate_cart_total(self, cart: Cart) -> Decimal:
+        """
+        Calculate total price of all items in the cart
+
+        Args:
+            cart: Cart object with cart_items loaded
+
+        Returns:
+            Decimal: Total price of all items
+        """
+        from decimal import Decimal
+
+        if not cart:
+            return Decimal('0.00')
+
+        total = Decimal('0.00')
+
+        # Access cart items using the related_name
+        for cart_item in cart.cart_items.all():
+            if cart_item.product and cart_item.quantity:
+                # Calculate: product.price * quantity
+                item_subtotal = cart_item.product.price * cart_item.quantity
+                total += item_subtotal
+
+        return total
 
     def _handle_delete(self, cart: Optional[Cart], products: list) -> Cart:
         """Handle DELETE action - remove items from cart"""
