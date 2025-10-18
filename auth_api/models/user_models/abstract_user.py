@@ -21,6 +21,7 @@ class AbstractUser(GenericBaseModel):
     dob = models.DateField(null=True)
     phone = models.CharField(max_length=10, null=True)
     image = models.CharField(max_length=2555, null=True)
+    order_no = models.PositiveIntegerField(null=True, blank=True)
     is_active = models.BooleanField(default=True)
     is_deleted = models.BooleanField(default=False)
 
