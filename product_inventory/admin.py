@@ -1,9 +1,12 @@
 from django.contrib import admin
+from import_export.admin import ImportExportModelAdmin
 
 from .models import Product, Category
+from .resources import ProductResource
 
 
-class ProductAdmin(admin.ModelAdmin):
+class ProductAdmin(ImportExportModelAdmin):
+    resource_class = ProductResource
     list_display = ('name', 'price', 'stock', 'category', 'is_active')
     list_filter = ('is_active', 'category')
     search_fields = ('name', 'description')

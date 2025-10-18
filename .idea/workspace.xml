@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="40e5bc7f-b1a5-421a-bb28-0a015a03e4d6" name="Changes" comment="update cart- add/update/delete item etc">
-      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+    <list default="true" id="40e5bc7f-b1a5-421a-bb28-0a015a03e4d6" name="Changes" comment="update cart- add/update/delete item">
+      <change afterPath="$PROJECT_DIR$/product_inventory/resources.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cart/export_types/cart_types/export_cart_item.py" beforeDir="false" afterPath="$PROJECT_DIR$/cart/export_types/cart_types/export_cart_item.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cart/serializers/cart_serializer.py" beforeDir="false" afterPath="$PROJECT_DIR$/cart/serializers/cart_serializer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cart/services/cart_services.py" beforeDir="false" afterPath="$PROJECT_DIR$/cart/services/cart_services.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dukan/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/dukan/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_inventory/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/product_inventory/admin.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +68,7 @@
   &quot;keyToString&quot;: {
     &quot;Django Server.dukan.executor&quot;: &quot;Debug&quot;,
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;Python.manage,py.executor&quot;: &quot;Debug&quot;,
+    &quot;Python.manage,py.executor&quot;: &quot;Run&quot;,
     &quot;Python.manage.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.OpenDjangoStructureViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
@@ -234,7 +232,15 @@
       <option name="project" value="LOCAL" />
       <updated>1760386004407</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="update cart- add/update/delete item">
+      <option name="closed" value="true" />
+      <created>1760544732440</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1760544732440</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -285,7 +291,8 @@
     <MESSAGE value="update cart" />
     <MESSAGE value="setup done cart- add/update/delete item etc" />
     <MESSAGE value="update cart- add/update/delete item etc" />
-    <option name="LAST_COMMIT_MESSAGE" value="update cart- add/update/delete item etc" />
+    <MESSAGE value="update cart- add/update/delete item" />
+    <option name="LAST_COMMIT_MESSAGE" value="update cart- add/update/delete item" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
