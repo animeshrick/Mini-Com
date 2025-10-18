@@ -1,4 +1,5 @@
 from typing import Optional
+
 from rest_framework import serializers
 
 from auth_api.export_types.validation_types.validation_result import ValidationResult

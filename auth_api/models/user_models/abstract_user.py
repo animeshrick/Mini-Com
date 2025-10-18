@@ -1,4 +1,5 @@
 from django.db import models
+
 from auth_api.models.base_models.base_model import GenericBaseModel
 from auth_api.models.deifinitions import AccountType
 

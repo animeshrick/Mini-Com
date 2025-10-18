@@ -76,7 +76,6 @@ class PasswordNotMatchError(DukanBaseException):
         logging.error(self.msg)
 
 
-
 class NotValidUserID(DukanBaseException):
     def __init__(self, msg: Optional[str] = None):
         if not msg:

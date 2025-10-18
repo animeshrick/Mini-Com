@@ -1,7 +1,8 @@
+import uuid
+
+from django.core.exceptions import ValidationError
 from django.db import models
 from django.utils.text import slugify
-import uuid
-from django.core.exceptions import ValidationError
 
 from auth_api.models.base_models.base_model import GenericBaseModel
 from product_inventory.models.category import Category
@@ -21,12 +22,13 @@ class Product(GenericBaseModel):
     sku = models.CharField(max_length=32, unique=True, blank=True)
     description = models.TextField(blank=True)
     price = models.DecimalField(max_digits=10, decimal_places=2)
-    stock = models.PositiveIntegerField(default=1, help_text="Number of items in stock")
+    stock = models.PositiveIntegerField(help_text="Number of items in stock", blank=True, null=True)
     image = models.URLField(max_length=1024, blank=True, null=True)
     category = models.ForeignKey(Category, related_name='products', on_delete=models.CASCADE)
     brand = models.CharField(max_length=100, blank=True, null=True)
     is_active = models.BooleanField(default=True)
-    discount = models.DecimalField(max_digits=5, decimal_places=2, default=0, help_text="Discount percentage (e.g., 10 for 10%)", blank=True, null=True)
+    discount = models.DecimalField(max_digits=5, decimal_places=2, default=0,
+                                   help_text="Discount percentage (e.g., 10 for 10%)", blank=True, null=True)
 
     @property
     def is_out_of_stock(self):
@@ -34,7 +36,7 @@ class Product(GenericBaseModel):
 
     def save(self, *args, **kwargs):
         if self.stock <= 0:
-            raise ValidationError("Product stock must be greater than 0 to add the product.")
+            raise ValidationError(f"Product ({self.name}) stock must be greater than 0 to add the product.")
         if not self.slug:
             base_slug = slugify(self.name)
             slug = base_slug
@@ -59,4 +61,4 @@ class Product(GenericBaseModel):
             models.Index(fields=["price"]),
             models.Index(fields=["category"]),
             models.Index(fields=["discount"]),
-        ] 
+        ]

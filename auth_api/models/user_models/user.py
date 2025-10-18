@@ -25,8 +25,8 @@ class User(AbstractUser):
                 user = User.objects.get(email=request_data.email)
                 if user:
                     if (
-                        EncryptionServices().decrypt(user.password)
-                        == request_data.password
+                            EncryptionServices().decrypt(user.password)
+                            == request_data.password
                     ):
                         if user.is_active and not user.is_deleted:
                             return True

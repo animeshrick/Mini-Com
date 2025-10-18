@@ -8,4 +8,3 @@ class RegisterUserRequestType(BaseModel):
     email: Optional[str] = None
     password: Optional[str] = None
     account_type: Optional[str] = None
- 

@@ -16,6 +16,8 @@ from auth_api.auth_exceptions.user_exceptions import (
     UserNotAuthenticatedError,
     PasswordNotMatchError, NotValidUserID,
 )
+
+
 # from subject.exceptions.subject_exceptions import (
 #     PermissionDeniedError,
 #     SubjectNotFoundError,
@@ -61,7 +63,7 @@ class ExceptionHandler:
             UserAuthenticationFailedError: {
                 "message": "UserAuthenticationFailedError",
                 "status": status.HTTP_401_UNAUTHORIZED,
-            },NotValidUserID: {
+            }, NotValidUserID: {
                 "message": "NotValidUserID",
                 "status": status.HTTP_401_UNAUTHORIZED,
             },

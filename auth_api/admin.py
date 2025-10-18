@@ -1,6 +1,8 @@
 from django.contrib import admin
 from django.contrib.auth.admin import UserAdmin as BaseUserAdmin
+
 from .models import User
+
 
 class UserAdmin(BaseUserAdmin):
     """
@@ -37,6 +39,7 @@ class UserAdmin(BaseUserAdmin):
 
     # Make date fields read-only in the admin
     readonly_fields = ('created_at', 'updated_at')
+
 
 # Register the User model with our custom UserAdmin
 admin.site.register(User, UserAdmin)

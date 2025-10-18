@@ -1,13 +1,8 @@
-import os
 import re
+import uuid
 from datetime import datetime
 
-import uuid
-from typing import List
-
 from django.core.exceptions import ObjectDoesNotExist
-from dotenv import load_dotenv
-
 
 from auth_api.auth_exceptions.user_exceptions import UserNotFoundError
 from auth_api.export_types.validation_types.validation_result import ValidationResult
@@ -142,7 +137,7 @@ def validate_password(password: str) -> ValidationResult:
 
 
 def validate_password_for_password_change(
-    password1: str, password2: str
+        password1: str, password2: str
 ) -> ValidationResult:
     if password1 and password2:
         if len(password1) >= 6 and len(password2) >= 6:
