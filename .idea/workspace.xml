@@ -4,29 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="40e5bc7f-b1a5-421a-bb28-0a015a03e4d6" name="Changes" comment="add export/import files">
-      <change afterPath="$PROJECT_DIR$/order/export_types/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order/export_types/order_types/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order/export_types/order_types/export_order.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order/export_types/order_types/order_cart.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order/export_types/request_data_type/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order/export_types/request_data_type/create_order.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order/models/enum/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order/models/enum/order_status.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order/models/order.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order/serializer/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order/serializer/order_serializer.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order/services/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order/services/order_services.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order/views/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order/views/place_order.py" afterDir="false" />
+    <list default="true" id="40e5bc7f-b1a5-421a-bb28-0a015a03e4d6" name="Changes" comment="user place order">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth_api/models/user_models/abstract_user.py" beforeDir="false" afterPath="$PROJECT_DIR$/auth_api/models/user_models/abstract_user.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dukan/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/dukan/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/order/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/serializer/order_serializer.py" beforeDir="false" afterPath="$PROJECT_DIR$/order/serializer/order_serializer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/services/order_services.py" beforeDir="false" afterPath="$PROJECT_DIR$/order/services/order_services.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -259,7 +241,15 @@
       <option name="project" value="LOCAL" />
       <updated>1760544732440</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="user place order">
+      <option name="closed" value="true" />
+      <created>1760805783044</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1760805783044</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -311,60 +301,16 @@
     <MESSAGE value="setup done cart- add/update/delete item etc" />
     <MESSAGE value="update cart- add/update/delete item etc" />
     <MESSAGE value="update cart- add/update/delete item" />
-    <option name="LAST_COMMIT_MESSAGE" value="update cart- add/update/delete item" />
+    <MESSAGE value="user place order" />
+    <option name="LAST_COMMIT_MESSAGE" value="user place order" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/auth_api/serializers/forgor_password_serializer.py</url>
-          <line>47</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/auth_api/serializers/forgor_password_serializer.py</url>
-          <line>57</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/product_inventory/models/product.py</url>
-          <line>38</line>
-          <option name="timeStamp" value="35" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/cart/export_types/cart_types/export_cart_item.py</url>
-          <line>20</line>
-          <option name="timeStamp" value="38" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/product_inventory/export_types/product_types/export_product.py</url>
-          <line>23</line>
-          <option name="timeStamp" value="40" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/order/views/place_order.py</url>
-          <line>19</line>
-          <option name="timeStamp" value="48" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/order/services/order_services.py</url>
-          <line>20</line>
-          <option name="timeStamp" value="51" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/order/serializer/order_serializer.py</url>
-          <line>72</line>
-          <option name="timeStamp" value="52" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/order/serializer/order_serializer.py</url>
-          <line>36</line>
-          <option name="timeStamp" value="53" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/order/views/place_order.py</url>
-          <line>29</line>
-          <option name="timeStamp" value="54" />
+          <line>68</line>
+          <option name="timeStamp" value="61" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

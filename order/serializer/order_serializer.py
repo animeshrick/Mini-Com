@@ -22,7 +22,7 @@ class OrderSerializer(serializers.ModelSerializer):
 
         try:
             cart = Cart.objects.get(id=data.cart_id, is_active=True)
-        except User.DoesNotExist:
+        except Cart.DoesNotExist:
             raise ValueError("Cart not found or is inactive")
 
         if cart:
@@ -44,12 +44,9 @@ class OrderSerializer(serializers.ModelSerializer):
         user = User.objects.get(id=data.user_id)
         cart = Cart.objects.get(id=data.cart_id)
 
-        # get all orders +1
-        latest_order_no = (
-            Order.objects.filter(user=user).order_by("-order_no").first()
-        )
+        latest_order_no = Order.objects.filter(id=data.user_id).all().count()
         if latest_order_no:
-            order_no = latest_order_no.order_no + 1
+            order_no = latest_order_no + 1
         else:
             order_no = 1
         user.order_no = order_no
@@ -66,8 +63,7 @@ class OrderSerializer(serializers.ModelSerializer):
             is_paid=True if data.pg_type != "COD" else False,
         )
 
-        # user.save()
-        # cart.save()
-        # order.save()
+        user.save()
+        cart.save()
 
         return order
