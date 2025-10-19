@@ -7,6 +7,7 @@ from auth_api.models import User
 from cart.models import Cart
 from order.export_types.request_data_type.create_order import CreateOrderRequest
 from order.models.order import Order
+from order.models.ordered_item import OrderedItem
 
 
 class OrderSerializer(serializers.ModelSerializer):
@@ -52,6 +53,12 @@ class OrderSerializer(serializers.ModelSerializer):
         user.order_no = order_no
         cart.is_active = False
 
+        pg_type = data.pg_type if data.pg_type else "COD"
+
+        is_paid = False
+        if pg_type != "COD":
+            is_paid = True
+
         order = Order.objects.create(
             cart=cart,
             user=user,
@@ -59,9 +66,16 @@ class OrderSerializer(serializers.ModelSerializer):
             coupon_code=None,
             delivery_address=data.delivery_address,
             delivery_date=None,
-            pg_type=data.pg_type if data.pg_type else "COD",
-            is_paid=True if data.pg_type != "COD" else False,
+            pg_type=pg_type,
+            is_paid=is_paid,
         )
+
+        for item in cart.cart_items.all():
+            OrderedItem.objects.create(
+                order=order,
+                product=item.product,
+                quantity=item.quantity
+            )
 
         user.save()
         cart.save()

@@ -4,11 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="40e5bc7f-b1a5-421a-bb28-0a015a03e4d6" name="Changes" comment="user place order">
+    <list default="true" id="40e5bc7f-b1a5-421a-bb28-0a015a03e4d6" name="Changes" comment="update admins">
+      <change afterPath="$PROJECT_DIR$/cart/services/cart_helper.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order/export_types/order_types/export_ordered_item.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order/models/ordered_item.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cart/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/cart/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cart/models/cart.py" beforeDir="false" afterPath="$PROJECT_DIR$/cart/models/cart.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cart/serializers/cart_serializer.py" beforeDir="false" afterPath="$PROJECT_DIR$/cart/serializers/cart_serializer.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product_inventory/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/product_inventory/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/order/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/export_types/order_types/export_order.py" beforeDir="false" afterPath="$PROJECT_DIR$/order/export_types/order_types/export_order.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/export_types/order_types/order_cart.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/models/order.py" beforeDir="false" afterPath="$PROJECT_DIR$/order/models/order.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/serializer/order_serializer.py" beforeDir="false" afterPath="$PROJECT_DIR$/order/serializer/order_serializer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/services/order_services.py" beforeDir="false" afterPath="$PROJECT_DIR$/order/services/order_services.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +77,7 @@
   "keyToString": {
     "Django Server.dukan.executor": "Debug",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Python.manage,py.executor": "Run",
+    "Python.manage,py.executor": "Debug",
     "Python.manage.executor": "Run",
     "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -78,7 +87,7 @@
     "com.codeium.enabled": "true",
     "git-widget-placeholder": "user__orders",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "D:/python-project/dukan/order",
+    "last_opened_file_path": "D:/python-project/dukan/order/export_types/order_types",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -95,11 +104,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\python-project\dukan\order\export_types\order_types" />
+      <recent name="D:\python-project\dukan\order\models" />
       <recent name="D:\python-project\dukan\order" />
       <recent name="D:\python-project\dukan\cart\export_types\cart_types" />
       <recent name="D:\python-project\dukan\cart\modles" />
-      <recent name="D:\python-project\dukan\auth_api\auth_exceptions" />
-      <recent name="D:\python-project\dukan\product_inventory" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\python-project\dukan\order\export_types\request_data_type" />
@@ -257,7 +266,15 @@
       <option name="project" value="LOCAL" />
       <updated>1760809927390</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="update admins">
+      <option name="closed" value="true" />
+      <created>1760812436981</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1760812436981</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -310,15 +327,41 @@
     <MESSAGE value="update cart- add/update/delete item etc" />
     <MESSAGE value="update cart- add/update/delete item" />
     <MESSAGE value="user place order" />
-    <option name="LAST_COMMIT_MESSAGE" value="user place order" />
+    <MESSAGE value="update admins" />
+    <option name="LAST_COMMIT_MESSAGE" value="update admins" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/order/serializer/order_serializer.py</url>
-          <line>68</line>
+          <line>82</line>
           <option name="timeStamp" value="61" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/order/export_types/order_types/export_order.py</url>
+          <line>17</line>
+          <option name="timeStamp" value="68" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/cart/serializers/cart_serializer.py</url>
+          <line>192</line>
+          <option name="timeStamp" value="71" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/cart/services/cart_services.py</url>
+          <line>48</line>
+          <option name="timeStamp" value="73" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/order/serializer/order_serializer.py</url>
+          <line>57</line>
+          <option name="timeStamp" value="74" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/order/export_types/order_types/export_order.py</url>
+          <line>29</line>
+          <option name="timeStamp" value="75" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

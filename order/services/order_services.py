@@ -31,6 +31,7 @@ class OrderServices:
                 pg_type=order.pg_type,
                 total_items=cart_items,
                 total_price=total_price,
+                ordered_items=list(user_cart.cart_items.all()),
             )
         except ValueError as ve:
             # Validation errors from serializer

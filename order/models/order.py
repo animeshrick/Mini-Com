@@ -7,11 +7,9 @@ from order.models.enum.order_status import OrderStatus
 
 
 class Order(GenericBaseModel):
-    cart = models.ForeignKey(Cart, on_delete=models.CASCADE, related_name='orders')
+    cart = models.ForeignKey(Cart, on_delete=models.CASCADE, related_name='orders', blank=True, null=True)
     user = models.ForeignKey(User, on_delete=models.CASCADE, related_name='user')
 
-    # total_items = models.PositiveIntegerField()
-    # total_price = models.DecimalField(max_digits=10, decimal_places=2)
     total_discount = models.DecimalField(max_digits=10, decimal_places=2, default=0.00)
     coupon_code = models.CharField(max_length=50, blank=True, null=True)
 
