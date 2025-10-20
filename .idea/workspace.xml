@@ -4,11 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="40e5bc7f-b1a5-421a-bb28-0a015a03e4d6" name="Changes" comment="update cart- add/update/delete item">
-      <change afterPath="$PROJECT_DIR$/product_inventory/resources.py" afterDir="false" />
+    <list default="true" id="40e5bc7f-b1a5-421a-bb28-0a015a03e4d6" name="Changes" comment="update admins">
+      <change afterPath="$PROJECT_DIR$/cart/services/cart_helper.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order/export_types/order_types/export_ordered_item.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order/models/ordered_item.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dukan/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/dukan/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product_inventory/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/product_inventory/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cart/models/cart.py" beforeDir="false" afterPath="$PROJECT_DIR$/cart/models/cart.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cart/serializers/cart_serializer.py" beforeDir="false" afterPath="$PROJECT_DIR$/cart/serializers/cart_serializer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/order/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/export_types/order_types/export_order.py" beforeDir="false" afterPath="$PROJECT_DIR$/order/export_types/order_types/export_order.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/export_types/order_types/order_cart.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/models/order.py" beforeDir="false" afterPath="$PROJECT_DIR$/order/models/order.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/serializer/order_serializer.py" beforeDir="false" afterPath="$PROJECT_DIR$/order/serializer/order_serializer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/services/order_services.py" beforeDir="false" afterPath="$PROJECT_DIR$/order/services/order_services.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,44 +73,45 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Django Server.dukan.executor&quot;: &quot;Debug&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;Python.manage,py.executor&quot;: &quot;Run&quot;,
-    &quot;Python.manage.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenDjangoStructureViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.pycharm.django.structure.promotion.once.per.project&quot;: &quot;true&quot;,
-    &quot;com.codeium.enabled&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;add__to__cart&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/python-project/dukan/cart/export_types/cart_types&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Django Server.dukan.executor": "Debug",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python.manage,py.executor": "Debug",
+    "Python.manage.executor": "Run",
+    "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.pycharm.django.structure.promotion.once.per.project": "true",
+    "com.codeium.enabled": "true",
+    "git-widget-placeholder": "user__orders",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "D:/python-project/dukan/order/export_types/order_types",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;postgresql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\python-project\dukan\order\export_types\order_types" />
+      <recent name="D:\python-project\dukan\order\models" />
+      <recent name="D:\python-project\dukan\order" />
       <recent name="D:\python-project\dukan\cart\export_types\cart_types" />
       <recent name="D:\python-project\dukan\cart\modles" />
-      <recent name="D:\python-project\dukan\auth_api\auth_exceptions" />
-      <recent name="D:\python-project\dukan\product_inventory" />
-      <recent name="D:\python-project\dukan\auth_api\serializers" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\python-project\dukan\order\export_types\request_data_type" />
       <recent name="D:\python-project\dukan\cart\export_types\request_data_types" />
     </key>
   </component>
@@ -240,7 +250,31 @@
       <option name="project" value="LOCAL" />
       <updated>1760544732440</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="user place order">
+      <option name="closed" value="true" />
+      <created>1760805783044</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1760805783044</updated>
+    </task>
+    <task id="LOCAL-00013" summary="user place order">
+      <option name="closed" value="true" />
+      <created>1760809927390</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1760809927390</updated>
+    </task>
+    <task id="LOCAL-00014" summary="update admins">
+      <option name="closed" value="true" />
+      <created>1760812436981</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1760812436981</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -292,57 +326,44 @@
     <MESSAGE value="setup done cart- add/update/delete item etc" />
     <MESSAGE value="update cart- add/update/delete item etc" />
     <MESSAGE value="update cart- add/update/delete item" />
-    <option name="LAST_COMMIT_MESSAGE" value="update cart- add/update/delete item" />
+    <MESSAGE value="user place order" />
+    <MESSAGE value="update admins" />
+    <option name="LAST_COMMIT_MESSAGE" value="update admins" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/auth_api/serializers/forgor_password_serializer.py</url>
-          <line>47</line>
-          <option name="timeStamp" value="3" />
+          <url>file://$PROJECT_DIR$/order/serializer/order_serializer.py</url>
+          <line>82</line>
+          <option name="timeStamp" value="61" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/auth_api/serializers/forgor_password_serializer.py</url>
+          <url>file://$PROJECT_DIR$/order/export_types/order_types/export_order.py</url>
+          <line>17</line>
+          <option name="timeStamp" value="68" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/cart/serializers/cart_serializer.py</url>
+          <line>192</line>
+          <option name="timeStamp" value="71" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/cart/services/cart_services.py</url>
+          <line>48</line>
+          <option name="timeStamp" value="73" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/order/serializer/order_serializer.py</url>
           <line>57</line>
-          <option name="timeStamp" value="4" />
+          <option name="timeStamp" value="74" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/product_inventory/models/product.py</url>
-          <line>38</line>
-          <option name="timeStamp" value="35" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/cart/export_types/cart_types/export_cart_item.py</url>
-          <line>20</line>
-          <option name="timeStamp" value="38" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/product_inventory/export_types/product_types/export_product.py</url>
-          <line>23</line>
-          <option name="timeStamp" value="40" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/cart/views/add_to_cart_view.py</url>
+          <url>file://$PROJECT_DIR$/order/export_types/order_types/export_order.py</url>
           <line>29</line>
-          <option name="timeStamp" value="41" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/cart/views/add_to_cart_view.py</url>
-          <line>38</line>
-          <option name="timeStamp" value="42" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/cart/export_types/cart_types/export_cart.py</url>
-          <line>18</line>
-          <option name="timeStamp" value="46" />
+          <option name="timeStamp" value="75" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
-    <watches-manager>
-      <configuration name="PythonConfigurationType">
-        <watch expression="cart.is_active" />
-      </configuration>
-    </watches-manager>
   </component>
 </project>

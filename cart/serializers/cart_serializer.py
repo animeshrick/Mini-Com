@@ -6,6 +6,7 @@ from _decimal import Decimal
 from auth_api.models import User
 from cart.export_types.request_data_types.add_update_delete import AddUpdatedDeleteCartRequestType
 from cart.models import Cart, CartItem
+from cart.services.cart_helper import CartHelper
 from product_inventory.models import Product
 
 
@@ -45,6 +46,8 @@ class CartSerializer(serializers.ModelSerializer):
         for item in data.products:
             # Validate product exists
             try:
+                if not CartHelper().validate_uuid(str(item.product_id)):
+                    raise ValueError(f"Product ID {item.product_id} is not a valid UUID")
                 product = Product.objects.get(id=item.product_id, is_active=True)
             except Product.DoesNotExist:
                 raise ValueError(f"Product {item.product_id} not found or is not available")

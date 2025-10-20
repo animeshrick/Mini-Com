@@ -14,8 +14,8 @@ class ProductAdmin(ImportExportModelAdmin):
     ordering = ('name',)
 
 
-class CategoryAdmin(admin.ModelAdmin):
-    list_display = ('name', 'slug')
+class CategoryAdmin(ImportExportModelAdmin):
+    list_display = ('id', 'name', 'slug')
     prepopulated_fields = {'slug': ('name',)}
 
 
