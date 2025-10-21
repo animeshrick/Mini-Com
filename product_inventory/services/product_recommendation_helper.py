@@ -29,11 +29,12 @@ class ProductRecommendationHelper:
                         })
 
             df = pd.DataFrame(records)
-            ProductRecommendationHelper._logger.debug(f"data_df: {df}")
-            if not orders.empty: # Check if orders is not empty before accessing orders[0]
-                ProductRecommendationHelper._logger.debug(f"Onion: {df[df['user_id'] == str(orders[0].user.id)]}")
-                ProductRecommendationHelper._logger.debug(f"Onion2: {str(orders[0].user.id)}")
-            ProductRecommendationHelper._logger.debug(f"Onion1: {df['user_id']}")
+            # print(f"df['user_id']: {df['user_id']}")
+            # ProductRecommendationHelper._logger.debug(f"data_df: {df}")
+            # if not orders.empty: # Check if orders is not empty before accessing orders[0]
+            #     ProductRecommendationHelper._logger.debug(f"Onion: {df[df['user_id'] == str(orders[0].user.id)]}")
+            #     ProductRecommendationHelper._logger.debug(f"Onion2: {str(orders[0].user.id)}")
+            # ProductRecommendationHelper._logger.debug(f"Onion1: {df['user_id']}")
 
             return df
         except Exception as e:
@@ -46,11 +47,29 @@ class ProductRecommendationHelper:
 
         recommender = ProductRecommender(df)
         recommendations = recommender.recommend_for_user(user_id)
+        # recommender.visualize_matrix()
 
         # return top N with pretty formatting
         result = [
             {"product": item, "predicted_score": round(score, 2)}
             for item, score in recommendations
+            if score > -1e10
         ]
+
+        # Initialize an empty list to hold the results
+        # result = []
+        #
+        # # Loop through each tuple in the recommendations list
+        # for item, score in recommendations:
+        #     print(f"recommendations: {recommendations}")
+        #     # Create a new dictionary with the desired format
+        #     formatted_recommendation = {
+        #         "product": item,
+        #         "predicted_score": round(score, 2)
+        #     }
+        #     print(f"formatted_recommendation: {formatted_recommendation}")
+        #     result.append(formatted_recommendation)
+        #     print(f"result: {result}")
+
         print(f"get_recommendations_result: {result}")
         return result
