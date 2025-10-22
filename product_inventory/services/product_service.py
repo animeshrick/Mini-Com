@@ -42,12 +42,12 @@ class ProductService:
             return None
 
     @staticmethod
-    def get_subject_service(product_id: str) -> Optional[ExportProduct]:
+    def get_product_service(product_id: str) -> Optional[ExportProduct]:
         try:
-            subject = Product.objects.get(id=product_id)
+            product = Product.objects.get(id=product_id)
         except Exception:
             raise ValueError("This product is not listed.")
-        if subject:
-            return ExportProduct(**subject.model_to_dict())
+        if product:
+            return ExportProduct(**product.model_to_dict())
         else:
             return None

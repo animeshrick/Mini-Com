@@ -4,17 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="40e5bc7f-b1a5-421a-bb28-0a015a03e4d6" name="Changes" comment="update fetch cart">
-      <change afterPath="$PROJECT_DIR$/cart/export_types/request_data_types/delete_cart.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cart/views/delete_cart.py" afterDir="false" />
+    <list default="true" id="40e5bc7f-b1a5-421a-bb28-0a015a03e4d6" name="Changes" comment="update delete cart">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cart/export_types/cart_types/export_cart.py" beforeDir="false" afterPath="$PROJECT_DIR$/cart/export_types/cart_types/export_cart.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cart/services/cart_services.py" beforeDir="false" afterPath="$PROJECT_DIR$/cart/services/cart_services.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cart/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/cart/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cart/views/fetch_cart.py" beforeDir="false" afterPath="$PROJECT_DIR$/cart/views/fetch_cart.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/helper_log.py" beforeDir="false" afterPath="$PROJECT_DIR$/helper_log.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/logs/log_20251022.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_inventory/export_types/product_types/export_product.py" beforeDir="false" afterPath="$PROJECT_DIR$/product_inventory/export_types/product_types/export_product.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_inventory/services/product_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/product_inventory/services/product_service.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_inventory/view/get_product.py" beforeDir="false" afterPath="$PROJECT_DIR$/product_inventory/view/get_product.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -166,7 +160,7 @@
       <workItem from="1761035604926" duration="232000" />
       <workItem from="1761035854046" duration="149000" />
       <workItem from="1761036029345" duration="15603000" />
-      <workItem from="1761109560725" duration="8000000" />
+      <workItem from="1761109560725" duration="11160000" />
     </task>
     <task id="LOCAL-00001" summary="user details api">
       <option name="closed" value="true" />
@@ -304,7 +298,15 @@
       <option name="project" value="LOCAL" />
       <updated>1761133142824</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="update delete cart">
+      <option name="closed" value="true" />
+      <created>1761136155591</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1761136155591</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -361,7 +363,8 @@
     <MESSAGE value="update admins with place order" />
     <MESSAGE value="update recommendation items" />
     <MESSAGE value="update fetch cart" />
-    <option name="LAST_COMMIT_MESSAGE" value="update fetch cart" />
+    <MESSAGE value="update delete cart" />
+    <option name="LAST_COMMIT_MESSAGE" value="update delete cart" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -390,6 +393,6 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Mini_Com$manage_py.coverage" NAME="manage,py Coverage Results" MODIFIED="1761136030244" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/Mini_Com$manage_py.coverage" NAME="manage,py Coverage Results" MODIFIED="1761137873396" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
 </project>
