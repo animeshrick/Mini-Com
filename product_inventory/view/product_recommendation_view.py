@@ -3,6 +3,7 @@ from rest_framework.response import Response
 from rest_framework import status
 
 from product_inventory.services.product_recommendation_helper import ProductRecommendationHelper
+from product_inventory.services.product_recommendation_helper_v2 import ProductRecommendationHelperV2
 
 
 class GetProductReCommendationView(APIView):
@@ -20,6 +21,7 @@ class GetProductReCommendationView(APIView):
             )
 
         try:
+            ProductRecommendationHelperV2.get_ordered_items(user_id)
             recommendations = ProductRecommendationHelper.get_recommendations(user_id)
             return Response(
                 data={
