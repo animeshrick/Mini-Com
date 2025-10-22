@@ -4,20 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="40e5bc7f-b1a5-421a-bb28-0a015a03e4d6" name="Changes" comment="update admins">
-      <change afterPath="$PROJECT_DIR$/cart/services/cart_helper.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order/export_types/order_types/export_ordered_item.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/order/models/ordered_item.py" afterDir="false" />
+    <list default="true" id="40e5bc7f-b1a5-421a-bb28-0a015a03e4d6" name="Changes" comment="update delete cart">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cart/models/cart.py" beforeDir="false" afterPath="$PROJECT_DIR$/cart/models/cart.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cart/serializers/cart_serializer.py" beforeDir="false" afterPath="$PROJECT_DIR$/cart/serializers/cart_serializer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/order/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/export_types/order_types/export_order.py" beforeDir="false" afterPath="$PROJECT_DIR$/order/export_types/order_types/export_order.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/export_types/order_types/order_cart.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/models/order.py" beforeDir="false" afterPath="$PROJECT_DIR$/order/models/order.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/serializer/order_serializer.py" beforeDir="false" afterPath="$PROJECT_DIR$/order/serializer/order_serializer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/order/services/order_services.py" beforeDir="false" afterPath="$PROJECT_DIR$/order/services/order_services.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_inventory/export_types/product_types/export_product.py" beforeDir="false" afterPath="$PROJECT_DIR$/product_inventory/export_types/product_types/export_product.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_inventory/services/product_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/product_inventory/services/product_service.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_inventory/view/get_product.py" beforeDir="false" afterPath="$PROJECT_DIR$/product_inventory/view/get_product.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +39,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main_setup" />
+        <entry key="$PROJECT_DIR$" value="fetch_cart_sync" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -62,7 +53,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/animeshrick/Mini-Com.git&quot;,
-    &quot;accountId&quot;: &quot;6b698b38-7959-4ea7-85a9-9e169d65a4c4&quot;
+    &quot;accountId&quot;: &quot;e715f562-d6e4-4db2-8f91-3570a4390a00&quot;
   }
 }</component>
   <component name="ProjectColorInfo">{
@@ -80,20 +71,24 @@
     "Python.manage,py.executor": "Debug",
     "Python.manage.executor": "Run",
     "RunOnceActivity.OpenDjangoStructureViewOnStart": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.pycharm.django.structure.promotion.once.per.project": "true",
     "com.codeium.enabled": "true",
-    "git-widget-placeholder": "user__orders",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "delete__cart",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "D:/python-project/dukan/order/export_types/order_types",
+    "junie.onboarding.icon.badge.shown": "true",
+    "last_opened_file_path": "D:/Projects/python/Mini-Com/cart/views",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "preferences.pluginManager",
+    "to.speed.mode.migration.done": "true",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -104,11 +99,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Projects\python\Mini-Com\cart\views" />
+      <recent name="D:\Projects\python\Mini-Com\cart\export_types\request_data_types" />
       <recent name="D:\python-project\dukan\order\export_types\order_types" />
       <recent name="D:\python-project\dukan\order\models" />
       <recent name="D:\python-project\dukan\order" />
-      <recent name="D:\python-project\dukan\cart\export_types\cart_types" />
-      <recent name="D:\python-project\dukan\cart\modles" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\python-project\dukan\order\export_types\request_data_type" />
@@ -117,19 +112,19 @@
   </component>
   <component name="RunManager">
     <configuration name="manage,py" type="PythonConfigurationType" factoryName="Python">
-      <module name="dukan" />
-      <option name="ENV_FILES" value="$PROJECT_DIR$/.env" />
+      <module name="Mini-Com" />
+      <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="SDK_NAME" value="Python 3.13 virtualenv at D:\python-project\virtual_env\dukan_env_3.13" />
+      <option name="SDK_HOME" value="D:\Projects\python\Mini-Com\venv\Scripts\python.exe" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/manage.py" />
       <option name="PARAMETERS" value="runserver" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -143,7 +138,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-python-sdk-8753aad8314d-d902c0275401-com.jetbrains.pycharm.community.sharedIndexes.bundled-PC-252.25557.178" />
+        <option value="bundled-js-predefined-d6986cc7102b-3aa1da707db6-JavaScript-PY-252.26830.99" />
+        <option value="bundled-python-sdk-164cda30dcd9-0af03a5fa574-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-252.26830.99" />
       </set>
     </attachedChunks>
   </component>
@@ -161,6 +157,10 @@
       <workItem from="1747946477544" duration="144000" />
       <workItem from="1748014492233" duration="6523000" />
       <workItem from="1748023569888" duration="22000" />
+      <workItem from="1761035604926" duration="232000" />
+      <workItem from="1761035854046" duration="149000" />
+      <workItem from="1761036029345" duration="15603000" />
+      <workItem from="1761109560725" duration="11160000" />
     </task>
     <task id="LOCAL-00001" summary="user details api">
       <option name="closed" value="true" />
@@ -274,7 +274,39 @@
       <option name="project" value="LOCAL" />
       <updated>1760812436981</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="update admins with place order">
+      <option name="closed" value="true" />
+      <created>1760883545193</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1760883545193</updated>
+    </task>
+    <task id="LOCAL-00016" summary="update recommendation items">
+      <option name="closed" value="true" />
+      <created>1761052805553</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1761052805553</updated>
+    </task>
+    <task id="LOCAL-00017" summary="update fetch cart">
+      <option name="closed" value="true" />
+      <created>1761133142824</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1761133142824</updated>
+    </task>
+    <task id="LOCAL-00018" summary="update delete cart">
+      <option name="closed" value="true" />
+      <created>1761136155591</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1761136155591</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -328,42 +360,39 @@
     <MESSAGE value="update cart- add/update/delete item" />
     <MESSAGE value="user place order" />
     <MESSAGE value="update admins" />
-    <option name="LAST_COMMIT_MESSAGE" value="update admins" />
+    <MESSAGE value="update admins with place order" />
+    <MESSAGE value="update recommendation items" />
+    <MESSAGE value="update fetch cart" />
+    <MESSAGE value="update delete cart" />
+    <option name="LAST_COMMIT_MESSAGE" value="update delete cart" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/order/serializer/order_serializer.py</url>
-          <line>82</line>
-          <option name="timeStamp" value="61" />
+          <url>file://$PROJECT_DIR$/product_inventory/services/product_recommender.py</url>
+          <line>102</line>
+          <option name="timeStamp" value="83" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/order/export_types/order_types/export_order.py</url>
-          <line>17</line>
-          <option name="timeStamp" value="68" />
+          <url>file://$PROJECT_DIR$/product_inventory/services/product_recommender.py</url>
+          <line>93</line>
+          <option name="timeStamp" value="112" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/cart/serializers/cart_serializer.py</url>
-          <line>192</line>
-          <option name="timeStamp" value="71" />
+          <url>file://$PROJECT_DIR$/product_inventory/services/product_recommendation_helper.py</url>
+          <line>74</line>
+          <option name="timeStamp" value="113" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/cart/services/cart_services.py</url>
-          <line>48</line>
-          <option name="timeStamp" value="73" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/order/serializer/order_serializer.py</url>
-          <line>57</line>
-          <option name="timeStamp" value="74" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/order/export_types/order_types/export_order.py</url>
-          <line>29</line>
-          <option name="timeStamp" value="75" />
+          <line>79</line>
+          <option name="timeStamp" value="121" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Mini_Com$manage_py.coverage" NAME="manage,py Coverage Results" MODIFIED="1761137873396" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
 </project>
