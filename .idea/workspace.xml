@@ -4,20 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="40e5bc7f-b1a5-421a-bb28-0a015a03e4d6" name="Changes" comment="update admins with place order">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4d7210e7-0d2d-46dd-bc85-c8ffa440d27d.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4d7210e7-0d2d-46dd-bc85-c8ffa440d27d/storage_v2/_src_/database/postgres.edMnLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4d7210e7-0d2d-46dd-bc85-c8ffa440d27d/storage_v2/_src_/database/postgres.edMnLQ/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4d7210e7-0d2d-46dd-bc85-c8ffa440d27d/storage_v2/_src_/database/postgres.edMnLQ/schema/pg_catalog.0S1ZNQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/4d7210e7-0d2d-46dd-bc85-c8ffa440d27d/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_18-10-2025_18_45__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_18-10-2025_18_45__Changes_.xml" afterDir="false" />
+    <list default="true" id="40e5bc7f-b1a5-421a-bb28-0a015a03e4d6" name="Changes" comment="update recommendation items">
+      <change afterPath="$PROJECT_DIR$/cart/export_types/request_data_types/fetch_cart.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/cart/views/fetch_cart.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/helper_log.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product_inventory/services/product_recommendation_helper.py" beforeDir="false" afterPath="$PROJECT_DIR$/product_inventory/services/product_recommendation_helper.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/product_inventory/services/product_recommender.py" beforeDir="false" afterPath="$PROJECT_DIR$/product_inventory/services/product_recommender.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cart/services/cart_services.py" beforeDir="false" afterPath="$PROJECT_DIR$/cart/services/cart_services.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cart/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/cart/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +41,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="user_orders" />
+        <entry key="$PROJECT_DIR$" value="product_recommendation" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -62,7 +55,7 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/animeshrick/Mini-Com.git&quot;,
-    &quot;accountId&quot;: &quot;6b698b38-7959-4ea7-85a9-9e169d65a4c4&quot;
+    &quot;accountId&quot;: &quot;e715f562-d6e4-4db2-8f91-3570a4390a00&quot;
   }
 }</component>
   <component name="ProjectColorInfo">{
@@ -87,10 +80,10 @@
     "RunOnceActivity.pycharm.django.structure.promotion.once.per.project": "true",
     "com.codeium.enabled": "true",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "product__recommendation",
+    "git-widget-placeholder": "fetch__cart__sync",
     "ignore.virus.scanning.warn.message": "true",
     "junie.onboarding.icon.badge.shown": "true",
-    "last_opened_file_path": "D:/Projects/python/Mini-Com",
+    "last_opened_file_path": "D:/Projects/python/Mini-Com/cart/views",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -108,11 +101,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Projects\python\Mini-Com\cart\views" />
       <recent name="D:\python-project\dukan\order\export_types\order_types" />
       <recent name="D:\python-project\dukan\order\models" />
       <recent name="D:\python-project\dukan\order" />
       <recent name="D:\python-project\dukan\cart\export_types\cart_types" />
-      <recent name="D:\python-project\dukan\cart\modles" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\python-project\dukan\order\export_types\request_data_type" />
@@ -168,7 +161,8 @@
       <workItem from="1748023569888" duration="22000" />
       <workItem from="1761035604926" duration="232000" />
       <workItem from="1761035854046" duration="149000" />
-      <workItem from="1761036029345" duration="14919000" />
+      <workItem from="1761036029345" duration="15603000" />
+      <workItem from="1761109560725" duration="5315000" />
     </task>
     <task id="LOCAL-00001" summary="user details api">
       <option name="closed" value="true" />
@@ -290,7 +284,15 @@
       <option name="project" value="LOCAL" />
       <updated>1760883545193</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="update recommendation items">
+      <option name="closed" value="true" />
+      <created>1761052805553</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1761052805553</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -345,7 +347,8 @@
     <MESSAGE value="user place order" />
     <MESSAGE value="update admins" />
     <MESSAGE value="update admins with place order" />
-    <option name="LAST_COMMIT_MESSAGE" value="update admins with place order" />
+    <MESSAGE value="update recommendation items" />
+    <option name="LAST_COMMIT_MESSAGE" value="update recommendation items" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -365,10 +368,15 @@
           <line>74</line>
           <option name="timeStamp" value="113" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/cart/services/cart_services.py</url>
+          <line>77</line>
+          <option name="timeStamp" value="121" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/Mini_Com$manage_py.coverage" NAME="manage,py Coverage Results" MODIFIED="1761049451135" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/Mini_Com$manage_py.coverage" NAME="manage,py Coverage Results" MODIFIED="1761132903744" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
 </project>
