@@ -107,25 +107,25 @@ def validate_role(role: str):
     )
 
 
-def validate_username(username: str) -> ValidationResult:
-    """Checks if the received username matches the required conditions."""
-    # Usernames can't be shorter than minlen
-    if len(username) < 6:
-        return ValidationResult(
-            is_validated=False, error="Usernames can't be shorter than 6 characters"
-        )
-    # Usernames can only use letters, numbers, dots and underscores
-    if not re.match("^[a-z0-9._]*$", username):
-        return ValidationResult(
-            is_validated=False,
-            error="Usernames can only use letters, numbers, dots and underscores",
-        )
-    # Usernames can't begin with a number
-    if username[0].isnumeric():
-        return ValidationResult(
-            is_validated=False, error="Usernames can't begin with a number"
-        )
-    return ValidationResult(is_validated=True, error=None)
+# def validate_username(username: str) -> ValidationResult:
+#     """Checks if the received username matches the required conditions."""
+#     # Usernames can't be shorter than minlen
+#     if len(username) < 6:
+#         return ValidationResult(
+#             is_validated=False, error="Usernames can't be shorter than 6 characters"
+#         )
+#     # Usernames can only use letters, numbers, dots and underscores
+#     if not re.match("^[a-z0-9._]*$", username):
+#         return ValidationResult(
+#             is_validated=False,
+#             error="Usernames can only use letters, numbers, dots and underscores",
+#         )
+#     # Usernames can't begin with a number
+#     if username[0].isnumeric():
+#         return ValidationResult(
+#             is_validated=False, error="Usernames can't begin with a number"
+#         )
+#     return ValidationResult(is_validated=True, error=None)
 
 
 def validate_password(password: str) -> ValidationResult:

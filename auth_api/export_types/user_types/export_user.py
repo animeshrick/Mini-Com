@@ -9,7 +9,7 @@ from pydantic import BaseModel
 class ExportUser(BaseModel):
     id: Optional[UUID]
     email: str
-    username: Optional[str] = None
+    # username: Optional[str] = None
     account_type: Optional[str] = None
     dob: Optional[datetime.datetime] = None
     phone: Optional[str] = None

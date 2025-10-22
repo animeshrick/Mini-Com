@@ -105,7 +105,7 @@ class CartServices:
             cart = Cart.objects.get(user__id=request_data.user_id, is_active=True)
             if cart.is_active:
                 cart.is_active = False
-                cart.save()
+                cart.delete()
                 return True
         except Cart.DoesNotExist:
             onion("delete_cart_DoesNotExist",f"Cart not found for user_id: {request_data.user_id}")

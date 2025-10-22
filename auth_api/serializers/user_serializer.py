@@ -16,7 +16,7 @@ class UserSerializer(serializers.ModelSerializer):
     def validate(self, data: Optional[dict] = None) -> Optional[bool]:
         email = data.get("email")
         password = data.get("password")
-        username = data.get("username")
+        # username = data.get("username")
         account_type = data.get("account_type")
 
         # Email Validation
@@ -29,8 +29,8 @@ class UserSerializer(serializers.ModelSerializer):
             raise serializers.ValidationError(detail="Email should not be empty.")
 
         # Username Validation
-        if not username and username != "" and isinstance(username, str):
-            raise serializers.ValidationError(detail="Username should not be empty.")
+        # if not username and username != "" and isinstance(username, str):
+        #     raise serializers.ValidationError(detail="Username should not be empty.")
 
         # Password Validation
         if password and password != "" and isinstance(password, str):
@@ -51,13 +51,13 @@ class UserSerializer(serializers.ModelSerializer):
         if self.validate(data):
             email = data.get("email")
             password = data.get("password")
-            username = data.get("username")
+            # username = data.get("username")
             account_type = data.get("account_type")
             if account_type and not isinstance(account_type, str):
                 account_type = account_type.value
 
             user = User(
-                username=username,
+                # username=username,
                 email=email,
                 account_type=account_type,
                 password=EncryptionServices().encrypt(password),

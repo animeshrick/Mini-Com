@@ -4,6 +4,7 @@ from typing import Optional
 from cart.models import Cart
 from order.export_types.order_types.export_order import ExportOrder
 from order.export_types.request_data_type.create_order import CreateOrderRequest
+from order.models.ordered_item import OrderedItem
 from order.serializer.order_serializer import OrderSerializer
 
 
@@ -24,7 +25,7 @@ class OrderServices:
 
             cart_items =  len(user_cart.cart_items.all())
 
-            return ExportOrder(
+            export_cart = ExportOrder(
                 id=order.id,
                 user=order.user,
                 cart=order.cart,
@@ -33,6 +34,10 @@ class OrderServices:
                 total_price=total_price,
                 ordered_items=list(user_cart.cart_items.all()),
             )
+
+            # user_cart.delete()
+
+            return export_cart
         except ValueError as ve:
             # Validation errors from serializer
             logging.error(f"Validation error in order service: {str(ve)}")

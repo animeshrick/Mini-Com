@@ -5,7 +5,7 @@ from auth_api.models.deifinitions import AccountType
 
 
 class AbstractUser(GenericBaseModel):
-    username = models.CharField(max_length=25, null=False, unique=True)
+    # username = models.CharField(max_length=25, null=False, unique=True)
     email = models.EmailField(
         verbose_name="Email", max_length=255, unique=True, null=False
     )
@@ -25,6 +25,9 @@ class AbstractUser(GenericBaseModel):
     is_active = models.BooleanField(default=True)
     is_deleted = models.BooleanField(default=False)
 
+    USERNAME_FIELD = "email"  # 👈 This line fixes the error
+    REQUIRED_FIELDS = []
+
     class Meta:
         abstract = True
 
@@ -40,11 +43,6 @@ class AbstractUser(GenericBaseModel):
     @property
     def get_is_active(self):
         return self.is_active
-
-    @property
-    def get_username(self):
-        if self.username:
-            return self.username
 
     def save(self, *args, **kwargs):
         super().save(*args, **kwargs)

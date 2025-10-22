@@ -7,7 +7,7 @@ from order.models.ordered_item import OrderedItem
 class OrderAdmin(admin.ModelAdmin):
     list_display = ['id', 'user', 'created_at', 'updated_at', 'order_status']
     list_filter = ['order_status', 'created_at', 'updated_at']
-    search_fields = ['user__username', 'id', 'user__email']
+    search_fields = ['user__name', 'id', 'user__email']
 
 
 @admin.register(OrderedItem)
