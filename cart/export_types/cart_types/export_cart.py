@@ -9,8 +9,8 @@ from cart.export_types.cart_types.export_cart_item import ExportCartItem
 
 
 class ExportCart(BaseModel):
-    id: Optional[UUID]
-    user: Optional[ExportCartUser]
+    id: Optional[UUID] = None
+    user: Optional[ExportCartUser] = None
     cart_items: Optional[List[ExportCartItem]] = None
     total_cart_price: Optional[Decimal] = None
     is_active: Optional[bool] = None

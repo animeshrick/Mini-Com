@@ -6,24 +6,23 @@ from rest_framework.views import APIView
 
 from auth_api.services.handlers.exception_handlers import ExceptionHandler
 from cart.export_types.request_data_types.add_update_delete import AddUpdatedDeleteCartRequestType
+from cart.export_types.request_data_types.delete_cart import DeleteCartRequestType
 from cart.export_types.request_data_types.fetch_cart import FetchCartRequestType
 from cart.services.cart_services import CartServices
 
 
-class FetchCartView(APIView):
+class DeleteCartView(APIView):
     renderer_classes = [JSONRenderer]
 
     def post(self, request: Request):
         try:
-            result = CartServices.fetch_cart(
-                request_data=FetchCartRequestType(**request.data)
+            result = CartServices.delete_cart(
+                request_data=DeleteCartRequestType(**request.data)
             )
-            cart_id = result.id
-            if cart_id:
+            if result:
                 return Response(
                     data={
-                        "message": "Your cart is synced.",
-                        "data": result.model_dump(),
+                        "message": "Your cart is deleted.",
                     },
                     status=status.HTTP_200_OK,
                     content_type="application/json",
@@ -31,7 +30,7 @@ class FetchCartView(APIView):
             else:
                 return Response(
                     data={
-                        "message": "We are sorry, something is not right in your cart!",
+                        "message": "We are sorry, something is not right with your cart!",
                         "data": [],
                     },
                     status=status.HTTP_500_INTERNAL_SERVER_ERROR,
