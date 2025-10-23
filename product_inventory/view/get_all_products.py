@@ -16,38 +16,29 @@ class AllProductView(APIView):
     def get(self, request):
         try:
             query = request.query_params.get("query", None)
+            all_product = ProductService().get_all_product_service(
+                request_data=FilterProductRequestType(query=query)
+            )
 
-            all_product = ProductService().get_all_product_service(request_data=FilterProductRequestType(query=query))
+            product_list = (
+                all_product.model_dump().get("product_list", [])
+                if all_product and isinstance(all_product, ExportProductList)
+                else []
+            )
 
-            if all_product and isinstance(all_product, ExportProductList):
-                product_list = all_product.model_dump().get("product_list", [])
-                onion("filter_products", str(len(product_list)))
+            onion("filter_products", str(len(product_list)))
 
-                if len(product_list) > 0:
-                    return Response(
-                        data={
-                            "message": "Data fetched successfully.",
-                            "data": product_list,
-                        },
-                        status=status.HTTP_200_OK,
-                        content_type="application/json",
-                    )
-                return Response(
-                    data={
-                        "data": [],
-                        "message": f"No products found for '{query}'.",
-                    },
-                    status=status.HTTP_200_OK,
-                    content_type="application/json",
-                )
-            else:
-                return Response(
-                    data={
-                        "data": [],
-                        "message": f"Sorry we cant fulfill your request['{query}'].",
-                    },
-                    status=status.HTTP_200_OK,
-                    content_type="application/json",
-                )
+            message = (
+                "Data fetched successfully."
+                if product_list
+                else f"Sorry, we can’t fulfill your request ['{query}']."
+            )
+
+            return Response(
+                data={"message": message, "data": product_list},
+                status=status.HTTP_200_OK,
+                content_type="application/json",
+            )
+
         except Exception as e:
             return ExceptionHandler().handle_exception(e)
