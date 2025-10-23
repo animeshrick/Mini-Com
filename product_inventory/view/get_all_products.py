@@ -4,21 +4,38 @@ from rest_framework.response import Response
 from rest_framework.views import APIView
 
 from auth_api.services.handlers.exception_handlers import ExceptionHandler
+from helper.helper_log import onion
 from product_inventory.export_types.product_types.export_product import ExportProductList
+from product_inventory.export_types.request_types.filter_product_request_type import FilterProductRequestType
 from product_inventory.services.product_service import ProductService
 
 
 class AllProductView(APIView):
     renderer_classes = [JSONRenderer]
 
-    def get(self, _):
+    def get(self, request):
         try:
-            all_product = ProductService().get_all_product_service()
+            query = request.query_params.get("query", None)
+
+            all_product = ProductService().get_all_product_service(request_data=FilterProductRequestType(query=query))
+
             if all_product and isinstance(all_product, ExportProductList):
+                product_list = all_product.model_dump().get("product_list", [])
+                onion("filter_products", str(len(product_list)))
+
+                if len(product_list) > 0:
+                    return Response(
+                        data={
+                            "message": "Data fetched successfully.",
+                            "data": product_list,
+                        },
+                        status=status.HTTP_200_OK,
+                        content_type="application/json",
+                    )
                 return Response(
                     data={
-                        "message": "Data fetched successfully.",
-                        "data": all_product.model_dump(),
+                        "data": [],
+                        "message": f"No products found for '{query}'.",
                     },
                     status=status.HTTP_200_OK,
                     content_type="application/json",
@@ -26,8 +43,8 @@ class AllProductView(APIView):
             else:
                 return Response(
                     data={
-                        "data": {"user_list": []},
-                        "message": "Currently we arr shortage of products",
+                        "data": [],
+                        "message": f"Sorry we cant fulfill your request['{query}'].",
                     },
                     status=status.HTTP_200_OK,
                     content_type="application/json",

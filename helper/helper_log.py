@@ -14,7 +14,7 @@ def onion(file: Optional[str], message: str):
     """
     global _logger_initialized
 
-    log_dir = r"D:\Projects\python\Mini-Com\logs"
+    log_dir = r"/logs"
     os.makedirs(log_dir, exist_ok=True)
 
     if not file:
@@ -41,7 +41,7 @@ def onion(file: Optional[str], message: str):
 
         _logger_initialized = True
         logging.info(f"Logger initialized → {log_path}")
-    print(f"log_message: {message}")
+    print(f"log_message_{file}: {message}")
 
     # Write the message to the log
     logging.info(message)
