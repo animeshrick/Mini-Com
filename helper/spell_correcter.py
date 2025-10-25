@@ -69,7 +69,7 @@
 #         return user_query
 
 
-from symspellpy import SymSpell, Verbosity
+from symspellpy import SymSpell
 
 from product_inventory.models import Product
 
@@ -95,7 +95,7 @@ class SpellCorrector:
             if product.category:
                 self.sym_spell.create_dictionary_entry(product.category.name.lower(), 1)
 
-    def correct_spell(self, user_query: str, products) -> str:
+    def correct_spell(self, user_query: str) -> str:
         query = user_query.lower().strip()
 
         # Already valid word or phrase?

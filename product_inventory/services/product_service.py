@@ -24,7 +24,7 @@ class ProductService:
             #  and len(request_data.query)>=4
 
             if user_query:
-                corrected_query = SpellCorrector().correct_spell(user_query=user_query, products=get_all_products if len(get_all_products)>0 else [])
+                corrected_query = SpellCorrector().correct_spell(user_query=user_query)
                 onion("user_query_corrected",f"User Input: {user_query} → Corrected: {corrected_query}")
 
             all_product = ExportProductList(
