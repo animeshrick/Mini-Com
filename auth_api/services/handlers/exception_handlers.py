@@ -18,13 +18,6 @@ from auth_api.auth_exceptions.user_exceptions import (
 )
 
 
-# from subject.exceptions.subject_exceptions import (
-#     PermissionDeniedError,
-#     SubjectNotFoundError,
-#     AlreadyEnrolledError,
-# )
-
-
 class ExceptionHandler:
     def get_handlers(self) -> dict:
         return {
@@ -75,30 +68,10 @@ class ExceptionHandler:
                 "message": "PasswordNotMatchError",
                 "status": status.HTTP_400_BAD_REQUEST,
             },
-            # UserNotPermittedError: {
-            #     "message": "UserNotPermittedError",
-            #     "status": status.HTTP_403_FORBIDDEN,
-            # },
-            # SubjectNotFoundError: {
-            #     "message": "SubjectNotFoundError",
-            #     "status": status.HTTP_403_FORBIDDEN,
-            # },
-            # PermissionDeniedError: {
-            #     "message": "PermissionDeniedError",
-            #     "status": status.HTTP_403_FORBIDDEN,
-            # },
-            # AlreadyEnrolledError: {
-            #     "message": "AlreadyEnrolledError",
-            #     "status": status.HTTP_403_FORBIDDEN,
-            # },
             ValueError: {
                 "message": "ValueError",
                 "status": status.HTTP_422_UNPROCESSABLE_ENTITY,
             },
-            # TokenError: {
-            #     "message": "TokenError",
-            #     "status": status.HTTP_401_UNAUTHORIZED,
-            # },
             serializers.ValidationError: {
                 "message": "SerializerValidationError",
                 "status": status.HTTP_400_BAD_REQUEST,
@@ -107,10 +80,10 @@ class ExceptionHandler:
                 "message": "ValidationError",
                 "status": status.HTTP_400_BAD_REQUEST,
             },
-            # Exception: {
-            #     "message": "InternalServerError",
-            #     "status": status.HTTP_500_INTERNAL_SERVER_ERROR,
-            # },
+            Exception: {
+                "message": "InternalServerError",
+                "status": status.HTTP_500_INTERNAL_SERVER_ERROR,
+            },
         }
 
     def handle_exception(self, e: Exception):
@@ -135,6 +108,3 @@ class ExceptionHandler:
                     status=handler["status"],
                     content_type="application/json",
                 )
-        else:
-            logging.error(f"InternalServerError: {e}")
-            raise e
