@@ -41,7 +41,6 @@ def onion(file: Optional[str], message: str):
 
         _logger_initialized = True
         logging.info(f"Logger initialized → {log_path}")
-    print(f"log_message_{file}: {message}")
 
     # Write the message to the log
     logging.info(message)

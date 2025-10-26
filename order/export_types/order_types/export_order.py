@@ -31,4 +31,4 @@ class ExportOrder(BaseModel):
 
 
 class ExportOrderList(BaseModel):
-    cart_list: List[ExportOrder]
+    order_list: List[ExportOrder]
