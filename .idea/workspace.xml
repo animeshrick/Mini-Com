@@ -5,12 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="40e5bc7f-b1a5-421a-bb28-0a015a03e4d6" name="Changes" comment="sent email after each successfull order">
-      <change afterPath="$PROJECT_DIR$/templates/emails/registration_welcome.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auth_api/views/register.py" beforeDir="false" afterPath="$PROJECT_DIR$/auth_api/views/register.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/helper/email_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/helper/email_service.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/emails/order_confirmation.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/emails/order_confirmation.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product_inventory/services/product_item_recommendation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product_inventory/view/product_recommendation_view.py" beforeDir="false" afterPath="$PROJECT_DIR$/product_inventory/view/product_recommendation_view.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,8 +19,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="HTML File" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -80,7 +76,7 @@
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.pycharm.django.structure.promotion.once.per.project": "true",
     "com.codeium.enabled": "true",
-    "git-widget-placeholder": "main__setup",
+    "git-widget-placeholder": "product__recommendation",
     "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "D:/python-project/dukan/order/export_types/request_data_type",
     "node.js.detected.package.eslint": "true",
@@ -390,14 +386,14 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/product_inventory/services/product_recommendation_helper.py</url>
-          <line>74</line>
-          <option name="timeStamp" value="82" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/order/export_types/order_types/export_order.py</url>
           <line>16</line>
           <option name="timeStamp" value="91" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/product_inventory/view/product_recommendation_view.py</url>
+          <line>37</line>
+          <option name="timeStamp" value="116" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
