@@ -5,8 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="40e5bc7f-b1a5-421a-bb28-0a015a03e4d6" name="Changes" comment="update">
+      <change afterPath="$PROJECT_DIR$/order/export_types/request_data_type/get_order.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/order/views/order_list.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_18-10-2025_18_45_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_18-10-2025_18_45__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/helper/helper_log.py" beforeDir="false" afterPath="$PROJECT_DIR$/helper/helper_log.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/export_types/order_types/export_order.py" beforeDir="false" afterPath="$PROJECT_DIR$/order/export_types/order_types/export_order.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/services/order_services.py" beforeDir="false" afterPath="$PROJECT_DIR$/order/services/order_services.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/order/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/order/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,9 +83,9 @@
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.pycharm.django.structure.promotion.once.per.project&quot;: &quot;true&quot;,
     &quot;com.codeium.enabled&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;search__product&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;order__list&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/python-project/dukan/product_inventory/services&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/python-project/dukan/order/export_types/request_data_type&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -93,11 +102,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\python-project\dukan\order\export_types\request_data_type" />
       <recent name="D:\python-project\dukan\product_inventory\services" />
       <recent name="D:\python-project\dukan\order\export_types\order_types" />
       <recent name="D:\python-project\dukan\order\models" />
       <recent name="D:\python-project\dukan\order" />
-      <recent name="D:\python-project\dukan\cart\export_types\cart_types" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\python-project\dukan\order\export_types\request_data_type" />
@@ -370,14 +379,9 @@
           <option name="timeStamp" value="82" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/order/services/order_services.py</url>
-          <line>39</line>
-          <option name="timeStamp" value="85" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/product_inventory/services/product_service.py</url>
-          <line>29</line>
-          <option name="timeStamp" value="87" />
+          <url>file://$PROJECT_DIR$/order/export_types/order_types/export_order.py</url>
+          <line>16</line>
+          <option name="timeStamp" value="91" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
