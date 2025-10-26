@@ -27,3 +27,18 @@ def send_order_confirmation(user_email:str, user_name: str, order: ExportOrder):
         [user_email],
         html_message=html_message,
     )
+
+def send_registration_confirmation(user_email:str):
+    subject = "Welcome to Boi-Khata-Dukan"
+    context = {}
+
+    html_message = render_to_string("emails/registration_welcome.html", context)
+    plain_message = strip_tags(html_message)
+
+    send_mail(
+        subject,
+        plain_message,
+        None,  # uses DEFAULT_FROM_EMAIL
+        [user_email],
+        html_message=html_message,
+    )

@@ -7,6 +7,7 @@ from rest_framework.views import APIView
 from auth_api.export_types.request_data_types.register_user import RegisterUserRequestType
 from auth_api.services.auth_services.auth_services import AuthServices
 from auth_api.services.handlers.exception_handlers import ExceptionHandler
+from helper.email_service import send_registration_confirmation
 
 
 class RegisterUsersView(APIView):
@@ -18,6 +19,7 @@ class RegisterUsersView(APIView):
                 request_data=RegisterUserRequestType(**request.data)
             )
             if result.get("successMessage"):
+                send_registration_confirmation(user_email=request.data.get("email"))
                 return Response(
                     data={
                         "message": result.get("successMessage"),
