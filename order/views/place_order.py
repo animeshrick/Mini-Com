@@ -3,6 +3,8 @@ from rest_framework.renderers import JSONRenderer
 from rest_framework.request import Request
 from rest_framework.response import Response
 from rest_framework.views import APIView
+import asyncio
+import threading
 
 from auth_api.models import User
 from auth_api.services.handlers.exception_handlers import ExceptionHandler
@@ -23,11 +25,20 @@ class PlaceOrderView(APIView):
             )
             if result:
                 user = User.objects.get(id=request_data.user_id)
-                send_order_confirmation(
+                threading.Thread(
+                    target=lambda: asyncio.run(
+                        send_order_confirmation(
+                            user_email=user.email,
+                            user_name=user.name,
+                            order=result
+                        )
+                    )
+                ).start()
+                asyncio.create_task(send_order_confirmation(
                     user_email=user.email,
                     user_name=user.name,
                     order=result
-                )
+                ))
                 return Response(
                     data={
                         "message": "You order is placed",

@@ -3,6 +3,8 @@ from rest_framework.renderers import JSONRenderer
 from rest_framework.request import Request
 from rest_framework.response import Response
 from rest_framework.views import APIView
+import asyncio
+import threading
 
 from auth_api.export_types.request_data_types.register_user import RegisterUserRequestType
 from auth_api.services.auth_services.auth_services import AuthServices
@@ -19,7 +21,11 @@ class RegisterUsersView(APIView):
                 request_data=RegisterUserRequestType(**request.data)
             )
             if result.get("successMessage"):
-                send_registration_confirmation(user_email=request.data.get("email"))
+                threading.Thread(
+                    target=lambda: asyncio.run(
+                        send_registration_confirmation(user_email=request.data.get("email"))
+                    )
+                ).start()
                 return Response(
                     data={
                         "message": result.get("successMessage"),
