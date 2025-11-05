@@ -2,6 +2,8 @@
 
 Dukan is a powerful and feature-rich e-commerce backend built with Python and Django. It's designed to provide a solid foundation for online stores, incorporating modern development practices and advanced, data-driven features to enhance the user experience.
 
+LIVE: https://mini-com-ngdx.onrender.com
+
 ## Key Features
 
 1.  **Intelligent Product Search:**
