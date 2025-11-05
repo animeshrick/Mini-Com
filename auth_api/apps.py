@@ -12,5 +12,5 @@ class AuthApiConfig(AppConfig):
         try:
             start_scheduler()
         except Exception as e:
-            from helper.logger import onion
+            from helper.helper_log import onion
             onion("keep_alive", f"Failed to start scheduler: {str(e)}")
