@@ -43,7 +43,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "import_export",
     "rest_framework",
-    "auth_api",
+    "auth_api.apps.AuthApiConfig",
     "product_inventory",
     "order",
     "cart"

@@ -1,3 +1,6 @@
+from django.utils import timezone
+import os
+
 from django.core.mail import send_mail
 from django.template.loader import render_to_string
 from django.utils.html import strip_tags
@@ -44,3 +47,34 @@ async def send_registration_confirmation(user_email: str):
     )
 
     onion(file="send_registration_confirmation", message=f"user_email:{user_email}, Subject:{subject}, html_message:{html_message}, plain_message={plain_message}")
+
+async def send_keep_alive_email():
+
+    subject = "Live long Boi-Khata-Dukan"
+
+    context = {
+        "admin_name": "Onion",
+        "admin_email": os.environ.get("EMAIL_HOST_USER"),
+        "server_name": "MyApp Server",
+        "timestamp": timezone.now().strftime("%Y-%m-%d %H:%M:%SZ"),
+        "status": "OK",
+        "message": "Keep-alive ping sent successfully.",
+        "status_url": "https://mini-com-ngdx.onrender.com/api/product/all_product?query=kitchen",
+    }
+
+    try:
+        html_message = await sync_to_async(render_to_string)("emails/keep_alive.html", context)
+        plain_message = strip_tags(html_message)
+
+        await sync_to_async(send_mail)(
+            subject,
+            plain_message,
+            None,
+            [os.environ.get("EMAIL_HOST_USER")],
+            html_message=html_message,
+        )
+
+        onion("keep_alive", f"Keep-alive email sent successfully at {context['timestamp']}")
+
+    except Exception as e:
+        onion("keep_alive", f"Failed to send keep-alive email: {str(e)}")
