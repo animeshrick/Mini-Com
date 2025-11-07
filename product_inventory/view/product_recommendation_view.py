@@ -4,7 +4,7 @@ from rest_framework import status
 
 from product_inventory.services.product_item_recommendation import product_item_recommendation
 # from product_inventory.services.product_recommendation_helper import ProductRecommendationHelper
-# from product_inventory.services.product_recommendation_helper_v2 import ProductRecommendationHelperV2
+from product_inventory.services.product_recommendation_helper_v2 import ProductRecommendationHelperV2
 
 
 class GetProductReCommendationView(APIView):
@@ -24,7 +24,7 @@ class GetProductReCommendationView(APIView):
 
         # try:
         print(f"ononnd: {product_item_recommendation(product_id)}")
-            # ProductRecommendationHelperV2.get_ordered_items(user_id)
+        ProductRecommendationHelperV2.get_ordered_items(user_id)
             # recommendations = ProductRecommendationHelper.get_recommendations(user_id)
         return Response(
             data={
