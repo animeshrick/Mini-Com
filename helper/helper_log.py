@@ -1,7 +1,7 @@
 from datetime import datetime
 from typing import Optional
 
-from helper.mongo_helper import MongoHelper
+# from helper.mongo_helper import MongoHelper
 import logging
 
 def onion(file: Optional[str], message: str, level: str = "INFO"):
@@ -16,6 +16,7 @@ def onion(file: Optional[str], message: str, level: str = "INFO"):
     }
 
     try:
-        MongoHelper.insert_one("app_logs", log_data)
+        # MongoHelper.insert_one("app_logs", log_data)
+        pass
     except Exception as e:
         logging.error(f"Failed to insert log into MongoDB: {e}")

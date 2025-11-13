@@ -5,13 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="40e5bc7f-b1a5-421a-bb28-0a015a03e4d6" name="Changes" comment="update">
-      <change afterPath="$PROJECT_DIR$/auth_api/tests/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auth_api/tests/login_test.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/helper/corn_job_schedular.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth_api/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/auth_api/apps.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/auth_api/services/handlers/exception_handlers.py" beforeDir="false" afterPath="$PROJECT_DIR$/auth_api/services/handlers/exception_handlers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dukan/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/dukan/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/helper/helper_log.py" beforeDir="false" afterPath="$PROJECT_DIR$/helper/helper_log.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/login.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -169,7 +167,7 @@
       <workItem from="1762763761535" duration="82000" />
       <workItem from="1762767778158" duration="139000" />
       <workItem from="1762856369148" duration="3959000" />
-      <workItem from="1763016721075" duration="5421000" />
+      <workItem from="1763016721075" duration="6546000" />
     </task>
     <task id="LOCAL-00001" summary="user details api">
       <option name="closed" value="true" />
@@ -403,7 +401,15 @@
       <option name="project" value="LOCAL" />
       <updated>1762349168080</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="update">
+      <option name="closed" value="true" />
+      <created>1763041449414</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1763041449414</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -467,10 +473,10 @@
     <MESSAGE value="sent email after each successfull order" />
     <MESSAGE value="ec2 setup changes" />
     <MESSAGE value="async to mails" />
-    <MESSAGE value="update" />
     <MESSAGE value="update with server running script scheduler" />
     <MESSAGE value="insert log into Mongo" />
-    <option name="LAST_COMMIT_MESSAGE" value="insert log into Mongo" />
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

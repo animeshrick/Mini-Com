@@ -16,7 +16,7 @@ from auth_api.auth_exceptions.user_exceptions import (
     UserNotAuthenticatedError,
     PasswordNotMatchError, NotValidUserID,
 )
-from helper.helper_log import onion
+# from helper.helper_log import onion
 
 
 class ExceptionHandler:
@@ -109,7 +109,7 @@ class ExceptionHandler:
                     status=handler["status"],
                     content_type="application/json",
                 )
-        onion(file= "handle_exception",message=f"Unhandled exception of type {type(e).__name__}: {str(e)}", level="Exception-Error")
+        # onion(file= "handle_exception",message=f"Unhandled exception of type {type(e).__name__}: {str(e)}", level="Exception-Error")
         return Response(
             data={"message": f"An unexpected error occurred: {str(e)}"},
             status=status.HTTP_500_INTERNAL_SERVER_ERROR,
